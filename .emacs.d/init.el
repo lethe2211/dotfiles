@@ -26,6 +26,14 @@
 ;Ctrl+Meta+vで1ページ上にスクロールする(デフォルトのM-vだと端末とキーバインドが競合する)
 (global-set-key (kbd "C-M-v") 'scroll-down)
 
+;Meta+nで2行下，Meta+pで2行上に移動
+(global-set-key "\M-n" '(lambda ()
+			   (interactive)
+			   (next-line 2)))
+(global-set-key "\M-p" '(lambda ()
+			  (interactive)
+			  (previous-line 2)))
+
 ;ウィンドウ版EmacsとX-Windowとのクリップボード共有
 (setq x-select-enable-clipboard t)
 (global-set-key "\C-y" 'x-clipboard-yank)
