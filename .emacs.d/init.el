@@ -58,6 +58,16 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . espresso-mode))
 
+; Interactively Do Things (highly recommended, but not strictly required)
+(require 'ido)
+(ido-mode t)
+
+; Rinari(rinariの導入が必要)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/rinari")
+;(require 'rinari)
+;(add-to-list 'auto-mode-alist '("\\.erb$" . rinari-mode))
+
+; rthml
 ;行番号表示(site-lispにlinum.elが必要)
 (require 'linum)
 (global-linum-mode)
