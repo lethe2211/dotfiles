@@ -17,8 +17,8 @@
 ;メニューバーを表示しない
 (menu-bar-mode nil)
 
-;ツールバーを表示しない
-(tool-bar-mode nil)
+; 選択部分のハイライト
+(transient-mark-mode t) 
 
 ;対応カッコのハイライト
 (show-paren-mode t)
@@ -33,10 +33,6 @@
 (global-set-key "\M-p" '(lambda ()
 			  (interactive)
 			  (previous-line 2)))
-
-;ウィンドウ版EmacsとX-Windowとのクリップボード共有
-(setq x-select-enable-clipboard t)
-(global-set-key "\C-y" 'x-clipboard-yank)
 
 ;autoinsert
 ;テンプレートは~/emacs.d/templateに置く
