@@ -17,29 +17,23 @@
 ;メニューバーを表示しない
 (menu-bar-mode nil)
 
-;ツールバーを表示しない
-(tool-bar-mode nil)
-
 ;対応カッコのハイライト
 (show-paren-mode t)
 
 ;Ctrl+Meta+vで1ページ上にスクロールする(デフォルトのM-vだと端末とキーバインドが競合する)
 (global-set-key (kbd "C-M-v") 'scroll-down)
 
+;Meta+nで2行下，Meta+pで2行上に移動
+(global-set-key "\M-n" '(lambda ()
+			   (interactive)
+			   (next-line 2)))
+(global-set-key "\M-p" '(lambda ()
+			  (interactive)
+			  (previous-line 2)))
+
 ;ウィンドウ版EmacsとX-Windowとのクリップボード共有
 (setq x-select-enable-clipboard t)
 (global-set-key "\C-y" 'x-clipboard-yank)
-
-;端末版EmacsとX-Windowとのクリップボード共有(xselのインストールが必要)
-(setq interprogram-paste-function
-      (lambda ()
-         (shell-command-to-string "xsel -b -o")))
-(setq interprogram-cut-function
-      (lambda (text &optional rest)
-         (let* ((process-connection-type nil)
-                (proc (start-process "xsel" "*Messages*" "xsel" "-b" "-i")))
-           (process-send-string proc text)
-           (process-send-eof proc))))
 
 ;autoinsert
 ;テンプレートは~/emacs.d/templateに置く
@@ -61,6 +55,16 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . espresso-mode))
 
+; Interactively Do Things (highly recommended, but not strictly required)
+(require 'ido)
+(ido-mode t)
+
+; Rinari(rinariの導入が必要)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/rinari")
+;(require 'rinari)
+;(add-to-list 'auto-mode-alist '("\\.erb$" . rinari-mode))
+
+; rthml
 ;行番号表示(site-lispにlinum.elが必要)
 (require 'linum)
 (global-linum-mode)
