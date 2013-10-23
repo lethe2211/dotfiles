@@ -33,11 +33,15 @@
 ;カーソルがどの関数の中にあるかをモードラインに表示する
 (which-function-mode 1)
 
-;3つ以上のウィンドウを開いている時，C-x oでポップアップ表示しながらウィンドウを移動できるようにする
+;3つ以上のウィンドウを開いている時，C-x oでポップアップ表示しながらウィンドウを移動できるようにする(site-lispにpopup.elとpopup-select-window.elが必要)
 (require 'popup)
 (require 'popup-select-window)
 (global-set-key "\C-xo" 'popup-select-window)
 (setq popup-select-window-window-highlight-face '(:foreground "white" :background "orange"))
+
+;C-x C-f /sudo:root@remote.alias:/path/to/fileで，この設定ファイルの内容を保持したまま，sshのリモートホストのファイルをsudo権限で編集することができる
+(require 'tramp)
+(add-to-list 'tramp-default-proxies-alist '("remote.alias" nil "/ssh:user@remote:"))
 
 ;C-hでカーソル前の1文字を消す(BackSpace)
 (global-set-key "\C-h" 'delete-backward-char)
