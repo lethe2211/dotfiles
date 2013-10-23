@@ -7,6 +7,9 @@
 (set-default-coding-systems 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
+;ロードパスの追加
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
+
 ;フォント
 ;(set-face-font 'default "Takaoゴシック 16")
 ;(set-default-font "Takaoゴシック")
@@ -22,6 +25,25 @@
 
 ;対応カッコのハイライト
 (show-paren-mode t)
+
+;バックアップファイルは作らない
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
+;カーソルがどの関数の中にあるかをモードラインに表示する
+(which-function-mode 1)
+
+;3つ以上のウィンドウを開いている時，C-x oでポップアップ表示しながらウィンドウを移動できるようにする
+(require 'popup)
+(require 'popup-select-window)
+(global-set-key "\C-xo" 'popup-select-window)
+(setq popup-select-window-window-highlight-face '(:foreground "white" :background "orange"))
+
+;C-hでカーソル前の1文字を消す(BackSpace)
+(global-set-key "\C-h" 'delete-backward-char)
+
+;M-gで入力した行にジャンプする
+(global-set-key (kbd "M-g") 'goto-line)
 
 ;Ctrl+Meta+vで1ページ上にスクロールする(デフォルトのM-vだと端末とキーバインドが競合する)
 (global-set-key (kbd "C-M-v") 'scroll-down)
@@ -53,7 +75,6 @@
 (setq auto-mode-alist (cons '("\\.js$" . javascript-mode) auto-mode-alist))
 
 ;espresso-mode(site-lispにespresso.elが必要)
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
 (autoload #'espresso-mode "espresso" "Start espresso-mode" t)
 (add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . espresso-mode))
