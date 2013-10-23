@@ -43,6 +43,45 @@
 (require 'tramp)
 (add-to-list 'tramp-default-proxies-alist '("remote.alias" nil "/ssh:user@remote:"))
 
+;;flymake
+(require 'flymake)
+
+;C++
+(defun flymake-cc-init ()
+  (let* ((temp-file   (flymake-init-create-temp-buffer-copy
+                       'flymake-create-temp-inplace))
+         (local-file  (file-relative-name
+                       temp-file
+                       (file-name-directory buffer-file-name))))
+    (list "g++" (list "-Wall" "-Wextra" "-fsyntax-only" local-file))))
+
+(push '("\\.cpp$" flymake-cc-init) flymake-allowed-file-name-masks)
+(add-hook 'c++-mode-hook
+          '(lambda ()
+             (flymake-mode t)))
+
+;Python
+(defun flymake-python-init ()
+  (let* ((temp-file (flymake-init-create-temp-buffer-copy
+                     'flymake-create-temp-inplace))
+         (local-file (file-relative-name
+                      temp-file
+                      (file-name-directory buffer-file-name))))
+    (list "pyflakes" (list local-file))))
+ 
+(defconst flymake-allowed-python-file-name-masks '(("\.py$" flymake-python-init)))
+(defvar flymake-python-err-line-patterns '(("\(.*\):\([0-9]+\):\(.*\)" 1 2 nil 3)))
+ 
+(defun flymake-python-load ()
+  (interactive)
+  (defadvice flymake-post-syntax-check (before flymake-force-check-was-interrupted)
+    (setq flymake-check-was-interrupted t))
+  (ad-activate 'flymake-post-syntax-check)
+  (setq flymake-allowed-file-name-masks (append flymake-allowed-file-name-masks flymake-allowed-python-file-name-masks))
+  (setq flymake-err-line-patterns flymake-python-err-line-patterns)
+  (flymake-mode t))
+(add-hook 'python-mode-hook '(lambda () (flymake-python-load)))
+
 ;C-hでカーソル前の1文字を消す(BackSpace)
 (global-set-key "\C-h" 'delete-backward-char)
 
