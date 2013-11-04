@@ -18,10 +18,10 @@
 (setq inhibit-splash-screen t)
 
 ;メニューバーを表示しない
-(menu-bar-mode nil)
+(menu-bar-mode 0)
 
 ;ツールバーを表示しない
-(tool-bar-mode nil)
+(tool-bar-mode 0)
 
 ;対応カッコのハイライト
 (show-paren-mode t)
@@ -131,7 +131,6 @@
 ;(require 'rinari)
 ;(add-to-list 'auto-mode-alist '("\\.erb$" . rinari-mode))
 
-; rthml
 ;行番号表示(site-lispにlinum.elが必要)
 (require 'linum)
 (global-linum-mode)
