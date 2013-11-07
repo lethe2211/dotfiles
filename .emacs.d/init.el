@@ -15,7 +15,10 @@
 (setq inhibit-splash-screen t)
 
 ;メニューバーを表示しない
-(menu-bar-mode nil)
+(menu-bar-mode 0)
+
+;ツールバーを表示しない
+(tool-bar-mode 0)
 
 ; 選択部分のハイライト
 (transient-mark-mode t) 
