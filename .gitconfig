@@ -1,0 +1,14 @@
+[user]
+	name = lethe
+	email = lethe2211@gmail.com
+[core]
+	editor = emacs
+	excludesfile = /Users/lethe/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	logg = log --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'

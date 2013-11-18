@@ -29,6 +29,9 @@
 ;対応カッコのハイライト
 (show-paren-mode t)
 
+;; yes or noでなく，y or nで答えられるようにする
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;バックアップファイルは作らない
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -41,6 +44,15 @@
 (require 'popup-select-window)
 (global-set-key "\C-xo" 'popup-select-window)
 (setq popup-select-window-window-highlight-face '(:foreground "white" :background "orange"))
+
+;; ELPAの設定
+;; M-x package-installで好きなパッケージをインストールできる
+(when (require 'package nil t)
+  (add-to-list 'package-archives
+	       '("melpa" . "http://melpa.milkbox.net/packages/"))
+  (add-to-list 'package-archives
+	       '("ELPA" . "http://tromey.com/elpa/"))
+  (package-initialize))
 
 ;C-x C-f /sudo:root@remote.alias:/path/to/fileで，この設定ファイルの内容を保持したまま，sshのリモートホストのファイルをsudo権限で編集することができる
 (require 'tramp)
@@ -125,6 +137,30 @@
 (require 'ido)
 (ido-mode t)
 
+;; web-modeの設定(ELPAによるweb-modeのインストールが必要)
+(when (require 'web-mode nil t)
+  ;; 自動的にWeb-modeを起動したい拡張子を追加する
+  (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.ctp\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+  ;; Web-modeのインデント設定用フック
+  (defun Web-mode-hook ( )
+    "Hooks for Web mode."
+    (setq Web-mode-markup-indent-offset 2) ; HTMLのインデント
+    (setq Web-mode-css-indent-offset 2)	   ; CSSのインデント
+    (setq Web-mode-code-indent-offset 2) ; JS, PHP, Rubyなどのインデント
+    (setq Web-mode-comment-style 2)	 ; Web-mode内のコメントのインデント
+    (setq Web-mode-style-padding 1)	   ; <style>内のインデント開始レベル
+    (setq Web-mode-script-padding 1)	   ; <script>内のインデント開始レベル
+    )
+  (add-hook 'Web-mode-hook 'Web-mode-hook)
+)
 ; Rinari(rinariの導入が必要)
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/rinari")
 ;(require 'rinari)
