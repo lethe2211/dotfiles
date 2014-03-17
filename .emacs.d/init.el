@@ -97,6 +97,9 @@
   (flymake-mode t))
 (add-hook 'python-mode-hook '(lambda () (flymake-python-load)))
 
+;ac-python(Python用のauto-complete-modeのコード．auto-complete-modeのインストールが必要)
+(require 'ac-python)
+
 ;C-hでカーソル前の1文字を消す(BackSpace)
 (global-set-key "\C-h" 'delete-backward-char)
 
