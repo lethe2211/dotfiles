@@ -7,6 +7,11 @@
 (set-default-coding-systems 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
+;プロキシ設定
+;; (setq url-proxy-services
+;;       '(("http" . "proxy.kuins.net:8080")
+;; 	  ("https" . "proxy.kuins.net:8080")))
+
 ;ロードパスの追加
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
@@ -57,6 +62,14 @@
 ;C-x C-f /sudo:root@remote.alias:/path/to/fileで，この設定ファイルの内容を保持したまま，sshのリモートホストのファイルをsudo権限で編集することができる
 (require 'tramp)
 (add-to-list 'tramp-default-proxies-alist '("remote.alias" nil "/ssh:user@remote:"))
+
+;; auto-completeの設定(elpaでauto-completeをインストールする必要がある)
+(require 'auto-complete-config)
+(ac-config-default)
+
+;; Pythonの自動補完(site-lispにac-python.elが必要)
+(require 'ac-python) 
+(add-to-list 'ac-modes 'python-2-mode)
 
 ;;flymake
 (require 'flymake)
@@ -119,9 +132,9 @@
 (setq auto-insert-directory "~/.emacs.d/template/")
 (load "autoinsert" t)
 (setq auto-insert-alist
-      (append '(("\\.py" . "utf8.py")
-		)
-	      auto-insert-alist))
+      (cons '("\\.cpp" . "template.cpp")
+      (cons '("\\.py"  . "utf8.py")
+	      auto-insert-alist)))
 (add-hook 'find-file-hooks 'auto-insert)
 
 ;javascript-mode(site-lispにjavascript.elが必要)
