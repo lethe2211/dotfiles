@@ -39,6 +39,9 @@
 ;カーソルがどの関数の中にあるかをモードラインに表示する
 (which-function-mode 1)
 
+;; C-tでウィンドウの切り替え
+(global-set-key "\C-t" 'other-window)
+
 ;3つ以上のウィンドウを開いている時，C-x oでポップアップ表示しながらウィンドウを移動できるようにする(site-lispにpopup.elとpopup-select-window.elが必要)
 (require 'popup)
 (require 'popup-select-window)
@@ -75,35 +78,9 @@
           '(lambda ()
              (flymake-mode t)))
 
-;Python
-(defun flymake-python-init ()
-  (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                     'flymake-create-temp-inplace))
-         (local-file (file-relative-name
-                      temp-file
-                      (file-name-directory buffer-file-name))))
-    (list "pyflakes" (list local-file))))
- 
-(defconst flymake-allowed-python-file-name-masks '(("\.py$" flymake-python-init)))
-(defvar flymake-python-err-line-patterns '(("\(.*\):\([0-9]+\):\(.*\)" 1 2 nil 3)))
- 
-(defun flymake-python-load ()
-  (interactive)
-  (defadvice flymake-post-syntax-check (before flymake-force-check-was-interrupted)
-    (setq flymake-check-was-interrupted t))
-  (ad-activate 'flymake-post-syntax-check)
-  (setq flymake-allowed-file-name-masks (append flymake-allowed-file-name-masks flymake-allowed-python-file-name-masks))
-  (setq flymake-err-line-patterns flymake-python-err-line-patterns)
-  (flymake-mode t))
-(add-hook 'python-mode-hook '(lambda () (flymake-python-load)))
-
-(require 'auto-complete-config)
-(ac-config-default)
-(add-to-list 'ac-modes 'text-mode)
-
-;ac-python(Python用のauto-complete-modeのコード．auto-complete-modeのインストールが必要)
-(require 'ac-python)
-;(add-to-list 'ac-modes 'python-2-mode)
+;; Python-flake
+(require 'flymake-python-pyflakes)
+(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
 ;C-hでカーソル前の1文字を消す(BackSpace)
 (global-set-key "\C-h" 'delete-backward-char)
@@ -128,7 +105,7 @@
 (load "autoinsert" t)
 (setq auto-insert-alist
       (cons '("\\.cpp" . "template.cpp")
-      (cons '("\\.py" . "template.py")
+      (cons '("\\.py"  . "template.py")
 	      auto-insert-alist)))
 (add-hook 'find-file-hooks 'auto-insert)
 
@@ -169,6 +146,11 @@
     )
   (add-hook 'Web-mode-hook 'Web-mode-hook)
 )
+
+;; yaml-mode(ELPAによるyaml-modeのインストールが必要)
+(when (require 'yaml-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode)))
+
 ; Rinari(rinariの導入が必要)
 ;(add-to-list 'load-path "~/.emacs.d/site-lisp/rinari")
 ;(require 'rinari)
