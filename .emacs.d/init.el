@@ -127,9 +127,9 @@
 (setq auto-insert-directory "~/.emacs.d/template/")
 (load "autoinsert" t)
 (setq auto-insert-alist
-      (append '(("\\.py" . "utf8.py")
-		)
-	      auto-insert-alist))
+      (cons '("\\.cpp" . "template.cpp")
+      (cons '("\\.py" . "template.py")
+	      auto-insert-alist)))
 (add-hook 'find-file-hooks 'auto-insert)
 
 ;javascript-mode(site-lispにjavascript.elが必要)
