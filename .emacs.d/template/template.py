@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 
+import sys
+
+'''
+
+'''
+
 def func():
     '''
 
     '''
     return None
 
-if __init__ == '__main__':
-    return func()
+if __name__ == '__main__':
+    func()
     
