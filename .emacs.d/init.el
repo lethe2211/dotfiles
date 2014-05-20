@@ -21,7 +21,7 @@
 (menu-bar-mode 0)
 
 ;ツールバーを表示しない
-(tool-bar-mode 0)
+;(tool-bar-mode 0)
 
 ; 選択部分のハイライト
 (transient-mark-mode t) 
