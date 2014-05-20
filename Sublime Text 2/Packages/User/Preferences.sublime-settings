@@ -1,0 +1,11 @@
+{
+	"build_env":
+	{
+		"PATH": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+	},
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}

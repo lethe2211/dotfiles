@@ -12,3 +12,5 @@
 	trustExitCode = true
 [alias]
 	logg = log --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
+[push]
+	default = simple
