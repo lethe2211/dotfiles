@@ -3,7 +3,10 @@
 	[
 		"Aizu Online Judge",
 		"Package Control",
+		"Pretty JSON",
 		"Python Pep8 Lint",
+		"Shell Turtlestein",
+		"SublimeClang",
 		"SublimeCodeIntel",
 		"SublimeREPL",
 		"SublimeRope"

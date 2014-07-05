@@ -4,6 +4,13 @@
 #include <vector>
 #include <queue>
 #include <stack>
+#include <map>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+
+#define INF 10000000
+
 
 using namespace std;
 
