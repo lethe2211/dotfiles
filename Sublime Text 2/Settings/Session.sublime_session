@@ -2,10 +2,10 @@
 	"folder_history":
 	[
 	],
-	"last_window_id": 11,
+	"last_window_id": 19,
 	"settings":
 	{
-		"new_window_height": 556.0,
+		"new_window_height": 856.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -13,12 +13,64 @@
 				"selected_items":
 				[
 					[
-						"_ta",
-						"_tag_has_class  (function)"
+						"used",
+						"used_cids"
+					],
+					[
+						"arti",
+						"article1"
+					],
+					[
+						"get",
+						"get_bibliography"
 					],
 					[
 						"graph",
-						"graph_cache"
+						"graph_json"
+					],
+					[
+						"ci",
+						"cit"
+					],
+					[
+						"grap",
+						"graph_json"
+					],
+					[
+						"gra",
+						"graph_json"
+					],
+					[
+						"cita",
+						"citation_articles"
+					],
+					[
+						"citat",
+						"citation_titles	(local, instance)"
+					],
+					[
+						"soup",
+						"soup_citation	(local, instance)"
+					],
+					[
+						"base",
+						"base_url	(local, instance)"
+					],
+					[
+						"art",
+						"art_json	(local, instance)"
+					],
+					[
+						"url",
+						"url_pdf"
+					],
+					[
+						"Cluster",
+						"Cluster_idを受け取り，書誌情報を返す"
+					],
+					[
+						"_ta",
+						"_tag_has_class  (function)"
 					],
 					[
 						"resul",
@@ -41,10 +93,6 @@
 						"sleep_time"
 					],
 					[
-						"url",
-						"url"
-					],
-					[
 						"en",
 						"encoding"
 					],
@@ -63,10 +111,6 @@
 					[
 						"abs",
 						"abspath	(local, instance)"
-					],
-					[
-						"get",
-						"get_citedby_count(cluster_id, from_year, to_year, timeout_count)	(global, function)"
 					],
 					[
 						"craw",
@@ -91,10 +135,6 @@
 					[
 						"stat",
 						"status"
-					],
-					[
-						"ci",
-						"citedby_count	(local, instance)"
 					],
 					[
 						"debug",
@@ -133,14 +173,6 @@
 						"parse"
 					],
 					[
-						"soup",
-						"soup_titles	(local, instance)"
-					],
-					[
-						"Cluster",
-						"ClusterScholarQuery	(imported, class)"
-					],
-					[
 						"ScholarQe",
 						"ScholarQuerierWithSnippets	(global, class)"
 					],
@@ -159,10 +191,6 @@
 					[
 						"citaio",
 						"citation_cmd	(local, instance)"
-					],
-					[
-						"art",
-						"article	(attribute, instance)"
 					],
 					[
 						"scho",
@@ -226,6 +254,26 @@
 			},
 			"file_history":
 			[
+				"/Users/admin/Dropbox/source/KUPC/2014b.cpp",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/scholar.py",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_base.py",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citation.py",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/fetchurl.py",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citedby.py",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_search_pdf",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/35.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/20.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/etc/reactive.cpp",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/36.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/54.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/3.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/2.in",
+				"/Users/admin/Dropbox/source/KUPC/2013e.cpp",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/22.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/43.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/41.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/47.in",
+				"/Users/admin/Downloads/kupc2013_io/r-sugoroku/in/53.in",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/jsoncache.rb",
 				"/Users/admin/dotfiles/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/Users/admin/Downloads/kupc2013_io/7age/in/2.in",
@@ -240,7 +288,6 @@
 				"/Users/admin/Dropbox/le3soft/report2/necessary.h",
 				"/Users/admin/Dropbox/source/python/google_scholar_citedby_count.py",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_crawler.py",
-				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citation.py",
 				"/Users/admin/Dropbox/source/python/cgi-bin/google_scholar_citedby_count.py",
 				"/Users/admin/Dropbox/source/KUPC/2013b.cpp",
 				"/Users/admin/Downloads/kupc2013_io/sum/in/33.in",
@@ -283,6 +330,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"used_cid",
+					"article",
+					"n",
+					"graph_json",
+					"result[:data]",
+					"result[:data",
+					"][:",
+					"print",
+					"citations",
+					"Identifier",
 					"url_pdf",
 					"_parse_links",
 					"引用",
@@ -317,6 +374,12 @@
 				"regex": false,
 				"replace_history":
 				[
+					"cid",
+					"cit",
+					"article",
+					"graph_all",
+					"graph_json",
+					""
 				],
 				"reverse": false,
 				"show_context": true,
@@ -326,7 +389,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 0.0
+				"height": 34.0
 			},
 			"input":
 			{
@@ -365,7 +428,7 @@
 			},
 			"replace":
 			{
-				"height": 0.0
+				"height": 64.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -388,10 +451,10 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 135.0,
+			"side_bar_width": 122.0,
 			"status_bar_visible": true
 		},
-		"new_window_width": 840.0
+		"new_window_width": 696.0
 	},
 	"windows":
 	[

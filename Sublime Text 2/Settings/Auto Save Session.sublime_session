@@ -2,7 +2,7 @@
 	"folder_history":
 	[
 	],
-	"last_window_id": 17,
+	"last_window_id": 23,
 	"settings":
 	{
 		"new_window_height": 856.0,
@@ -13,7 +13,47 @@
 				"selected_items":
 				[
 					[
+						"get",
+						"get_bibliography  (function)"
+					],
+					[
+						"G",
+						"GoogleScholarArticleCrawler	(global, class)"
+					],
+					[
+						"fet",
+						"FetchUrl"
+					],
+					[
+						"used",
+						"used_cids"
+					],
+					[
+						"arti",
+						"article1"
+					],
+					[
+						"graph",
+						"graph_json"
+					],
+					[
 						"ci",
+						"cit"
+					],
+					[
+						"grap",
+						"graph_json"
+					],
+					[
+						"gra",
+						"graph_json"
+					],
+					[
+						"cita",
+						"citation_articles"
+					],
+					[
+						"citat",
 						"citation_titles	(local, instance)"
 					],
 					[
@@ -39,10 +79,6 @@
 					[
 						"_ta",
 						"_tag_has_class  (function)"
-					],
-					[
-						"graph",
-						"graph_cache"
 					],
 					[
 						"resul",
@@ -83,10 +119,6 @@
 					[
 						"abs",
 						"abspath	(local, instance)"
-					],
-					[
-						"get",
-						"get_citedby_count(cluster_id, from_year, to_year, timeout_count)	(global, function)"
 					],
 					[
 						"craw",
@@ -230,6 +262,10 @@
 			},
 			"file_history":
 			[
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_article_crawler",
+				"/Users/admin/Dropbox/source/KUPC/2014b.cpp",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/scholar.py",
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_base.py",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citation.py",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/fetchurl.py",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citedby.py",
@@ -303,6 +339,17 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"fetchurl",
+					"put_json",
+					"rd",
+					"random",
+					"used_cid",
+					"article",
+					"n",
+					"graph_json",
+					"result[:data]",
+					"result[:data",
+					"][:",
 					"print",
 					"citations",
 					"Identifier",
@@ -340,6 +387,12 @@
 				"regex": false,
 				"replace_history":
 				[
+					"cid",
+					"cit",
+					"article",
+					"graph_all",
+					"graph_json",
+					""
 				],
 				"reverse": false,
 				"show_context": true,
@@ -388,7 +441,7 @@
 			},
 			"replace":
 			{
-				"height": 0.0
+				"height": 64.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -424,16 +477,24 @@
 				"selected_items":
 				[
 					[
+						"get",
+						"get_bibliography  (function)"
+					],
+					[
+						"G",
+						"GoogleScholarArticleCrawler	(global, class)"
+					],
+					[
+						"fet",
+						"FetchUrl"
+					],
+					[
 						"used",
 						"used_cids"
 					],
 					[
 						"arti",
 						"article1"
-					],
-					[
-						"get",
-						"get_bibliography"
 					],
 					[
 						"graph",
@@ -624,108 +685,26 @@
 			"buffers":
 			[
 				{
-					"file": "/Users/admin/Dropbox/rails/search/app/assets/javascripts/main.js",
+					"contents": "Package Control Messages\n========================\n\nSFTP:\n----\n\n  Thanks for installing Sublime SFTP! Below are some quick notes to get you\n  started with the plugin. Please see http://wbond.net/sublime_packages/sftp for\n  the full documentation.\n  \n  \n  There are two major modes of operation:\n  1. Mapping a local folder to a remote folder\n  2. Working off of a server\n  \n  \n  Mapping a Local Folder to a Remote Folder\n  ----\n  \n  To map a local folder to a remote folder, right-click on it in the side bar\n  and select the SFTP/SFTP > Map to Remote... You will enter your connection\n  parameters and a new file will be created named sftp-config.json.\n  \n  Once this file has been saved, all files in that folder and all subfolders\n  will have various operations available via the side bar context menu, editor\n  context menu and command palette.\n  \n  \n  Working off of a Server\n  ----\n  \n  To work off of a server, use the File menu and select SFTP/FTP > Setup Server...\n  You will enter your connection parameters and options then save the file with\n  the name you want to give the connection.\n  \n  Once the server config is saved, you will be automatically connected to the\n  server and you can browse and perform actions via the quick panel.\n  \n  Unfortunely due to limitations of the Sublime Text 2 API, it is not possible\n  to present the remote filesystem in the side bar. There are, however, key\n  bindings for connecting to servers to help reduce the amount of time remote\n  file operations take.\n  \n  \n  Support\n  ----\n  \n  To learn more about the features and settings, please visit\n  http://wbond.net/sublime_packages/sftp.\n  \n  If you are having trouble, please contact me at support@wbond.net. The Support\n  page, http://wbond.net/sublime_packages/sftp/support, includes instructions\n  for capturing a debug log that will be useful if you believe you are\n  experiencing a bug.\n  \n",
 					"settings":
 					{
-						"buffer_size": 8604,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/app/controllers/static_pages_controller.rb",
-					"settings":
-					{
-						"buffer_size": 9096,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/graph/cache_search+engine.json",
-					"settings":
-					{
-						"buffer_size": 45886,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_crawler.py",
-					"settings":
-					{
-						"buffer_size": 1288,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_bibliography.py",
-					"settings":
-					{
-						"buffer_size": 2319,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_search_pdf.py",
-					"settings":
-					{
-						"buffer_size": 1125,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citedby.py",
-					"settings":
-					{
-						"buffer_size": 3596,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/citeseerx_crawler.py",
-					"settings":
-					{
-						"buffer_size": 2574,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citation.py",
-					"settings":
-					{
-						"buffer_size": 4441,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/README.md",
-					"settings":
-					{
-						"buffer_size": 4327,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citedby_count.py",
-					"settings":
-					{
-						"buffer_size": 4795,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/admin/Dropbox/rails/search/app/views/static_pages/result.html.erb",
-					"settings":
-					{
-						"buffer_size": 667,
-						"line_ending": "Unix"
+						"buffer_size": 1895,
+						"line_ending": "Unix",
+						"name": "Package Control Messages",
+						"scratch": true
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 367.0,
+				"height": 392.0,
 				"selected_items":
 				[
+					[
+						"pa",
+						"Package Control: Install Package"
+					],
 					[
 						"pack",
 						"Package Control: Install Package"
@@ -733,10 +712,6 @@
 					[
 						"key",
 						"Preferences: Key Bindings - Default"
-					],
-					[
-						"pa",
-						"Package Control: Install Package"
 					],
 					[
 						"",
@@ -764,6 +739,8 @@
 			},
 			"file_history":
 			[
+				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_article_crawler",
+				"/Users/admin/Dropbox/source/KUPC/2014b.cpp",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/scholar.py",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_base.py",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citation.py",
@@ -839,6 +816,10 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"fetchurl",
+					"put_json",
+					"rd",
+					"random",
 					"used_cid",
 					"article",
 					"n",
@@ -899,23 +880,22 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/admin/Dropbox/rails/search/app/assets/javascripts/main.js",
 							"settings":
 							{
-								"buffer_size": 8604,
+								"buffer_size": 1895,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2539,
-										2539
+										1895,
+										1895
 									]
 								],
 								"settings":
@@ -1023,1252 +1003,13 @@
 										"Python Django": "Python"
 									},
 									"codeintel_tooltips": "popup",
+									"incomplete_sync": null,
 									"sublime_auto_complete": true,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"word_wrap": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 2951.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/Users/admin/Dropbox/rails/search/app/controllers/static_pages_controller.rb",
-							"settings":
-							{
-								"buffer_size": 9096,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1829,
-										1829
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Ruby/Ruby.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 569.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/graph/cache_search+engine.json",
-							"settings":
-							{
-								"buffer_size": 45886,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										34567,
-										34567
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/JavaScript/JSON.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 19716.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_crawler.py",
-							"settings":
-							{
-								"buffer_size": 1288,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										179,
-										179
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 45.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_bibliography.py",
-							"settings":
-							{
-								"buffer_size": 2319,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										119,
-										119
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_search_pdf.py",
-							"settings":
-							{
-								"buffer_size": 1125,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										110,
-										110
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citedby.py",
-							"settings":
-							{
-								"buffer_size": 3596,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										329,
-										329
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 39.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/citeseerx_crawler.py",
-							"settings":
-							{
-								"buffer_size": 2574,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1635,
-										1635
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Python/Python.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 660.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 8,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citation.py",
-							"settings":
-							{
-								"buffer_size": 4441,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										788,
-										788
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 885.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 9,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/README.md",
-							"settings":
-							{
-								"buffer_size": 4327,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										550,
-										550
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Markdown/Markdown.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 497.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 10,
-							"file": "/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_citedby_count.py",
-							"settings":
-							{
-								"buffer_size": 4795,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										559,
-										559
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Python/Python.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 506.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 11,
-							"file": "/Users/admin/Dropbox/rails/search/app/views/static_pages/result.html.erb",
-							"settings":
-							{
-								"buffer_size": 667,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										666,
-										667
-									]
-								],
-								"settings":
-								{
-									"codeintel": true,
-									"codeintel_config":
-									{
-										"JavaScript":
-										{
-											"codeintel_max_recursive_dir_depth": 2.0,
-											"codeintel_scan_files_in_project": false,
-											"javascriptExtraPaths":
-											[
-											]
-										},
-										"PHP":
-										{
-											"codeintel_max_recursive_dir_depth": 5.0,
-											"codeintel_scan_files_in_project": false,
-											"phpExtraPaths":
-											[
-											]
-										},
-										"Python":
-										{
-											"env":
-											{
-											}
-										}
-									},
-									"codeintel_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_live": true,
-									"codeintel_live_enabled_languages":
-									[
-										"JavaScript",
-										"Mason",
-										"XBL",
-										"XUL",
-										"RHTML",
-										"SCSS",
-										"Python",
-										"HTML",
-										"Ruby",
-										"Python3",
-										"XML",
-										"Sass",
-										"XSLT",
-										"Django",
-										"HTML5",
-										"Perl",
-										"CSS",
-										"Twig",
-										"Less",
-										"Smarty",
-										"Node.js",
-										"Tcl",
-										"TemplateToolkit",
-										"PHP"
-									],
-									"codeintel_max_recursive_dir_depth": 10.0,
-									"codeintel_scan_exclude_dir":
-									{
-										"JavaScript":
-										[
-											"/build/",
-											"/min/"
-										]
-									},
-									"codeintel_scan_files_in_project": true,
-									"codeintel_selected_catalogs":
-									[
-										"PyWin32",
-										"jQuery",
-										"Rails"
-									],
-									"codeintel_snippets": true,
-									"codeintel_syntax_map":
-									{
-										"Python Django": "Python"
-									},
-									"codeintel_tooltips": "popup",
-									"sublime_auto_complete": true,
-									"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 40.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -2315,7 +1056,11 @@
 			{
 				"height": 100.0
 			},
-			"position": "1883 -150 1237 1028 1440 -150 1680 1028 ",
+			"output.sftp":
+			{
+				"height": 0.0
+			},
+			"position": "276 0 840 878 0 0 1440 878 ",
 			"replace":
 			{
 				"height": 64.0
@@ -2343,7 +1088,7 @@
 			"side_bar_visible": true,
 			"side_bar_width": 122.0,
 			"status_bar_visible": true,
-			"window_id": 13,
+			"window_id": 23,
 			"workspace_name": ""
 		}
 	],
