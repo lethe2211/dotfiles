@@ -1,8 +1,9 @@
 {
 	"folder_history":
 	[
+		"/Users/admin/Desktop/LiteratureSearchEngine"
 	],
-	"last_window_id": 23,
+	"last_window_id": 27,
 	"settings":
 	{
 		"new_window_height": 856.0,
@@ -221,9 +222,13 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 367.0,
+				"height": 392.0,
 				"selected_items":
 				[
+					[
+						"pa",
+						"Package Control: Install Package"
+					],
 					[
 						"pack",
 						"Package Control: Install Package"
@@ -231,10 +236,6 @@
 					[
 						"key",
 						"Preferences: Key Bindings - Default"
-					],
-					[
-						"pa",
-						"Package Control: Install Package"
 					],
 					[
 						"",
@@ -262,6 +263,8 @@
 			},
 			"file_history":
 			[
+				"/Users/admin/Downloads/kupc2014_io/JL/in/0.txt",
+				"/Users/admin/Desktop/LiteratureSearchEngine/sftp-config.json",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_article_crawler",
 				"/Users/admin/Dropbox/source/KUPC/2014b.cpp",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/scholar.py",
@@ -439,6 +442,10 @@
 			{
 				"height": 100.0
 			},
+			"output.sftp":
+			{
+				"height": 100.0
+			},
 			"replace":
 			{
 				"height": 64.0
@@ -467,7 +474,7 @@
 			"side_bar_width": 122.0,
 			"status_bar_visible": true
 		},
-		"new_window_width": 840.0
+		"new_window_width": 697.0
 	},
 	"windows":
 	[
@@ -685,13 +692,12 @@
 			"buffers":
 			[
 				{
-					"contents": "Package Control Messages\n========================\n\nSFTP:\n----\n\n  Thanks for installing Sublime SFTP! Below are some quick notes to get you\n  started with the plugin. Please see http://wbond.net/sublime_packages/sftp for\n  the full documentation.\n  \n  \n  There are two major modes of operation:\n  1. Mapping a local folder to a remote folder\n  2. Working off of a server\n  \n  \n  Mapping a Local Folder to a Remote Folder\n  ----\n  \n  To map a local folder to a remote folder, right-click on it in the side bar\n  and select the SFTP/SFTP > Map to Remote... You will enter your connection\n  parameters and a new file will be created named sftp-config.json.\n  \n  Once this file has been saved, all files in that folder and all subfolders\n  will have various operations available via the side bar context menu, editor\n  context menu and command palette.\n  \n  \n  Working off of a Server\n  ----\n  \n  To work off of a server, use the File menu and select SFTP/FTP > Setup Server...\n  You will enter your connection parameters and options then save the file with\n  the name you want to give the connection.\n  \n  Once the server config is saved, you will be automatically connected to the\n  server and you can browse and perform actions via the quick panel.\n  \n  Unfortunely due to limitations of the Sublime Text 2 API, it is not possible\n  to present the remote filesystem in the side bar. There are, however, key\n  bindings for connecting to servers to help reduce the amount of time remote\n  file operations take.\n  \n  \n  Support\n  ----\n  \n  To learn more about the features and settings, please visit\n  http://wbond.net/sublime_packages/sftp.\n  \n  If you are having trouble, please contact me at support@wbond.net. The Support\n  page, http://wbond.net/sublime_packages/sftp/support, includes instructions\n  for capturing a debug log that will be useful if you believe you are\n  experiencing a bug.\n  \n",
+					"file": "/Users/admin/Downloads/kupc2014_io/weakpoint/in/stageInfo.csv",
 					"settings":
 					{
-						"buffer_size": 1895,
+						"buffer_size": 73,
 						"line_ending": "Unix",
-						"name": "Package Control Messages",
-						"scratch": true
+						"name": "stageNo, world, score, isCleared, deathCount, clea"
 					}
 				}
 			],
@@ -739,6 +745,8 @@
 			},
 			"file_history":
 			[
+				"/Users/admin/Downloads/kupc2014_io/JL/in/0.txt",
+				"/Users/admin/Desktop/LiteratureSearchEngine/sftp-config.json",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/google_scholar_article_crawler",
 				"/Users/admin/Dropbox/source/KUPC/2014b.cpp",
 				"/Users/admin/Dropbox/rails/search/lib/crawler/scholarpy/scholar.py",
@@ -885,21 +893,23 @@
 					[
 						{
 							"buffer": 0,
+							"file": "/Users/admin/Downloads/kupc2014_io/weakpoint/in/stageInfo.csv",
 							"settings":
 							{
-								"buffer_size": 1895,
+								"buffer_size": 73,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1895,
-										1895
+										73,
+										73
 									]
 								],
 								"settings":
 								{
+									"auto_name": "stageNo, world, score, isCleared, deathCount, clea",
 									"codeintel": true,
 									"codeintel_config":
 									{
@@ -1005,11 +1015,10 @@
 									"codeintel_tooltips": "popup",
 									"incomplete_sync": null,
 									"sublime_auto_complete": true,
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"word_wrap": true
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 40.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1058,9 +1067,9 @@
 			},
 			"output.sftp":
 			{
-				"height": 0.0
+				"height": 100.0
 			},
-			"position": "276 0 840 878 0 0 1440 878 ",
+			"position": "86 0 697 878 0 0 1440 878 ",
 			"replace":
 			{
 				"height": 64.0
@@ -1088,7 +1097,7 @@
 			"side_bar_visible": true,
 			"side_bar_width": 122.0,
 			"status_bar_visible": true,
-			"window_id": 23,
+			"window_id": 27,
 			"workspace_name": ""
 		}
 	],
