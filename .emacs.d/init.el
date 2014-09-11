@@ -147,6 +147,14 @@
   (add-hook 'Web-mode-hook 'Web-mode-hook)
 )
 
+;; emmet-modeの設定(ELPAによるemmet-modeのインストールが必要)
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook  'emmet-mode)       ; 自動起動
+(add-hook 'emmet-mode-hook 
+    (lambda () (setq emmet-indentation 2)))  ; インデントの設定
+(setq emmet-move-cursor-between-quotes t)    ; カーソルの自動移動
+
 ;; yaml-mode(ELPAによるyaml-modeのインストールが必要)
 (when (require 'yaml-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode)))
