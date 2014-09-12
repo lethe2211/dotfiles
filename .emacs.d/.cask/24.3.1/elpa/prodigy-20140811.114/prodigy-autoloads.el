@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (prodigy prodigy-view-mode prodigy-mode prodigy-define-status
 ;;;;;;  prodigy-define-tag prodigy-define-service prodigy-add-filter)
-;;;;;;  "prodigy" "prodigy.el" (21521 45989 0 0))
+;;;;;;  "prodigy" "prodigy.el" (21522 51099 338165 0))
 ;;; Generated autoloads from prodigy.el
 
 (autoload 'prodigy-add-filter "prodigy" "\
@@ -54,7 +54,8 @@ Manage external services from within Emacs.
 
 ;;;***
 
-;;;### (autoloads nil nil ("prodigy-pkg.el") (21521 45989 37420 0))
+;;;### (autoloads nil nil ("prodigy-pkg.el") (21522 51099 457029
+;;;;;;  471000))
 
 ;;;***
 

@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("bind-key-pkg.el" "bind-key.el") (21521
-;;;;;;  45983 391214 0))
+;;;### (autoloads nil nil ("bind-key-pkg.el" "bind-key.el") (21522
+;;;;;;  51085 815652 997000))
 
 ;;;***
 

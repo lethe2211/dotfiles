@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("commander-pkg.el" "commander.el") (21462
-;;;;;;  1146 331372 0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/.cask/24.3.1/bootstrap/commander-20140120.1052/commander-pkg.el"
+;;;;;;  "../../../../../../.emacs.d/.cask/24.3.1/bootstrap/commander-20140120.1052/commander.el")
+;;;;;;  (21522 50968 969508 28000))
 
 ;;;***
 

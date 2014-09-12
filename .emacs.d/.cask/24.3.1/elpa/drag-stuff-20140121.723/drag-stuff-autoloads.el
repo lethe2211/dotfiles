@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (drag-stuff-global-mode turn-off-drag-stuff-mode
 ;;;;;;  turn-on-drag-stuff-mode drag-stuff-mode) "drag-stuff" "drag-stuff.el"
-;;;;;;  (21521 46002 0 0))
+;;;;;;  (21522 51150 494165 0))
 ;;; Generated autoloads from drag-stuff.el
 
 (autoload 'drag-stuff-mode "drag-stuff" "\
@@ -46,8 +46,8 @@ See `drag-stuff-mode' for more information on Drag-Stuff mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("drag-stuff-pkg.el") (21521 46002 34078
-;;;;;;  0))
+;;;### (autoloads nil nil ("drag-stuff-pkg.el") (21522 51150 567621
+;;;;;;  26000))
 
 ;;;***
 

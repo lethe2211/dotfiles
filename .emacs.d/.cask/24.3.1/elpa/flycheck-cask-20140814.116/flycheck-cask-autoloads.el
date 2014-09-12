@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (flycheck-cask-setup) "flycheck-cask" "flycheck-cask.el"
-;;;;;;  (21521 46000 0 0))
+;;;;;;  (21522 51144 86165 0))
 ;;; Generated autoloads from flycheck-cask.el
 
 (autoload 'flycheck-cask-setup "flycheck-cask" "\
@@ -22,8 +22,8 @@ Set `flycheck-emacs-lisp-initialize-packages' and
 
 ;;;***
 
-;;;### (autoloads nil nil ("flycheck-cask-pkg.el") (21521 46000 212892
-;;;;;;  0))
+;;;### (autoloads nil nil ("flycheck-cask-pkg.el") (21522 51144 285447
+;;;;;;  242000))
 
 ;;;***
 

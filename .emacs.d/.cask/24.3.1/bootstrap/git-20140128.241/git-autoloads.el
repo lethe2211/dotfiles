@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("git-pkg.el" "git.el") (21462 1146 613808
-;;;;;;  0))
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/.cask/24.3.1/bootstrap/git-20140128.241/git-pkg.el"
+;;;;;;  "../../../../../../.emacs.d/.cask/24.3.1/bootstrap/git-20140128.241/git.el")
+;;;;;;  (21522 50969 943821 82000))
 
 ;;;***
 

@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (helm-themes) "helm-themes" "helm-themes.el" (21521
-;;;;;;  48283 0 0))
+;;;### (autoloads (helm-themes) "helm-themes" "helm-themes.el" (21522
+;;;;;;  51129 154165 0))
 ;;; Generated autoloads from helm-themes.el
 
 (autoload 'helm-themes "helm-themes" "\
@@ -14,8 +14,8 @@ Theme selection with helm interface
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-themes-pkg.el") (21521 48283 582817
-;;;;;;  0))
+;;;### (autoloads nil nil ("helm-themes-pkg.el") (21522 51129 276401
+;;;;;;  342000))
 
 ;;;***
 

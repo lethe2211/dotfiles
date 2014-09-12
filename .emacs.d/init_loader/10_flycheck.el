@@ -33,5 +33,10 @@
 ;; Ruby
 (add-hook 'ruby-mode-hook 'flycheck-mode)
 
+;; flycheck-color-mode-line
+(require 'flycheck-color-mode-line)
+(eval-after-load "flycheck"
+  '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
+
 (provide '10_flycheck)
 ;;; 10_flycheck.el ends here

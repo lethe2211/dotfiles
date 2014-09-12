@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (scala-mode) "scala-mode" "scala-mode.el" (21521
-;;;;;;  48266 0 0))
+;;;### (autoloads (scala-mode) "scala-mode" "scala-mode.el" (21522
+;;;;;;  50994 622165 0))
 ;;; Generated autoloads from scala-mode.el
 
 (autoload 'scala-mode "scala-mode" "\
@@ -20,7 +20,7 @@ When started, run `scala-mode-hook'.
 ;;;### (autoloads (scala-quit-interpreter scala-load-file scala-eval-buffer
 ;;;;;;  scala-eval-definition scala-eval-region scala-switch-to-interpreter
 ;;;;;;  scala-run-scala scala-interpreter-running-p-1) "scala-mode-inf"
-;;;;;;  "scala-mode-inf.el" (21521 48266 0 0))
+;;;;;;  "scala-mode-inf.el" (21522 50993 970165 0))
 ;;; Generated autoloads from scala-mode-inf.el
 
 (autoload 'scala-interpreter-running-p-1 "scala-mode-inf" "\
@@ -88,7 +88,7 @@ Quit Scala interpreter.
 ;;;;;;  "scala-mode-feature-tags.el" "scala-mode-feature.el" "scala-mode-fontlock.el"
 ;;;;;;  "scala-mode-indent.el" "scala-mode-lib.el" "scala-mode-navigation.el"
 ;;;;;;  "scala-mode-pkg.el" "scala-mode-ui.el" "scala-mode-variables.el")
-;;;;;;  (21521 48266 983267 0))
+;;;;;;  (21522 50994 768438 593000))
 
 ;;;***
 

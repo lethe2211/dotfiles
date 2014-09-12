@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (pallet-update pallet-install pallet-init) "pallet"
-;;;;;;  "pallet.el" (21521 45991 0 0))
+;;;;;;  "pallet.el" (21522 51104 706165 0))
 ;;; Generated autoloads from pallet.el
 
 (autoload 'pallet-init "pallet" "\
@@ -24,7 +24,7 @@ Update installed packages.
 
 ;;;***
 
-;;;### (autoloads nil nil ("pallet-pkg.el") (21521 45991 778614 0))
+;;;### (autoloads nil nil ("pallet-pkg.el") (21522 51104 850357 592000))
 
 ;;;***
 

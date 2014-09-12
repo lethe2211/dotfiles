@@ -5,8 +5,8 @@
 
 ;;;### (autoloads (anzu-replace-at-cursor-thing anzu-query-replace-regexp
 ;;;;;;  anzu-query-replace anzu-query-replace-at-cursor-thing anzu-query-replace-at-cursor
-;;;;;;  global-anzu-mode anzu-mode) "anzu" "anzu.el" (21521 48288
-;;;;;;  0 0))
+;;;;;;  global-anzu-mode anzu-mode) "anzu" "anzu.el" (21522 51155
+;;;;;;  630165 0))
 ;;; Generated autoloads from anzu.el
 
 (autoload 'anzu-mode "anzu" "\
@@ -62,7 +62,7 @@ See `anzu-mode' for more information on Anzu mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("anzu-pkg.el") (21521 48288 123762 0))
+;;;### (autoloads nil nil ("anzu-pkg.el") (21522 51155 805175 385000))
 
 ;;;***
 

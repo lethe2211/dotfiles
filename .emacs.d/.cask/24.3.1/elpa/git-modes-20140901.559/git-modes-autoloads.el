@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (git-commit-mode) "git-commit-mode" "git-commit-mode.el"
-;;;;;;  (21521 43539 0 0))
+;;;;;;  (21522 51137 690165 0))
 ;;; Generated autoloads from git-commit-mode.el
 
 (autoload 'git-commit-mode "git-commit-mode" "\
@@ -21,7 +21,7 @@ basic structure of and errors in git commit messages.
 ;;;***
 
 ;;;### (autoloads (git-rebase-mode) "git-rebase-mode" "git-rebase-mode.el"
-;;;;;;  (21521 43539 0 0))
+;;;;;;  (21522 51137 530165 0))
 ;;; Generated autoloads from git-rebase-mode.el
 
 (autoload 'git-rebase-mode "git-rebase-mode" "\
@@ -39,7 +39,7 @@ running 'man git-rebase' at the command line) for details.
 ;;;***
 
 ;;;### (autoloads (gitattributes-mode) "gitattributes-mode" "gitattributes-mode.el"
-;;;;;;  (21521 43539 0 0))
+;;;;;;  (21522 51137 618165 0))
 ;;; Generated autoloads from gitattributes-mode.el
 
 (autoload 'gitattributes-mode "gitattributes-mode" "\
@@ -53,7 +53,7 @@ A major mode for editing .gitattributes files.
 ;;;***
 
 ;;;### (autoloads (gitconfig-mode) "gitconfig-mode" "gitconfig-mode.el"
-;;;;;;  (21521 43539 0 0))
+;;;;;;  (21522 51137 446165 0))
 ;;; Generated autoloads from gitconfig-mode.el
 
 (autoload 'gitconfig-mode "gitconfig-mode" "\
@@ -66,7 +66,7 @@ A major mode for editing .gitconfig files.
 ;;;***
 
 ;;;### (autoloads (gitignore-mode) "gitignore-mode" "gitignore-mode.el"
-;;;;;;  (21521 43539 0 0))
+;;;;;;  (21522 51137 762165 0))
 ;;; Generated autoloads from gitignore-mode.el
 
 (autoload 'gitignore-mode "gitignore-mode" "\
@@ -78,8 +78,8 @@ A major mode for editing .gitignore files.
 
 ;;;***
 
-;;;### (autoloads nil nil ("git-modes-pkg.el") (21521 43539 219017
-;;;;;;  0))
+;;;### (autoloads nil nil ("git-modes-pkg.el") (21522 51137 826480
+;;;;;;  77000))
 
 ;;;***
 

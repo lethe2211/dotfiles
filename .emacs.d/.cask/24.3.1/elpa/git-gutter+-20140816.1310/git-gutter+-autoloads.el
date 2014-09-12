@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (git-gutter+-commit global-git-gutter+-mode git-gutter+-mode)
-;;;;;;  "git-gutter+" "git-gutter+.el" (21521 48285 0 0))
+;;;;;;  "git-gutter+" "git-gutter+.el" (21522 51140 174165 0))
 ;;; Generated autoloads from git-gutter+.el
 
 (autoload 'git-gutter+-mode "git-gutter+" "\
@@ -37,8 +37,8 @@ Commit staged changes. If nothing is staged, ask to stage the current buffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("git-gutter+-pkg.el") (21521 48285 568943
-;;;;;;  0))
+;;;### (autoloads nil nil ("git-gutter+-pkg.el") (21522 51140 303856
+;;;;;;  450000))
 
 ;;;***
 

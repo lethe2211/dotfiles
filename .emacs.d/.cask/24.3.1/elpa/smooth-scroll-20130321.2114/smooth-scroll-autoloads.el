@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads nil nil ("smooth-scroll-pkg.el" "smooth-scroll.el")
-;;;;;;  (21521 49632 433480 0))
+;;;;;;  (21522 51089 254123 697000))
 
 ;;;***
 

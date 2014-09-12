@@ -10,7 +10,7 @@
 ;;;;;;  helm-git-grep-run-elscreen-action helm-git-grep-run-other-frame-action
 ;;;;;;  helm-git-grep-run-other-window-action helm-git-grep-run-default-action
 ;;;;;;  helm-git-grep-run-persistent-action) "helm-git-grep" "helm-git-grep.el"
-;;;;;;  (21521 48284 0 0))
+;;;;;;  (21522 51131 910165 0))
 ;;; Generated autoloads from helm-git-grep.el
 
 (autoload 'helm-git-grep-run-persistent-action "helm-git-grep" "\
@@ -98,8 +98,8 @@ Invoke `helm-git-grep' from other helm.
 
 ;;;***
 
-;;;### (autoloads nil nil ("helm-git-grep-pkg.el") (21521 48284 990158
-;;;;;;  0))
+;;;### (autoloads nil nil ("helm-git-grep-pkg.el") (21522 51132 45662
+;;;;;;  355000))
 
 ;;;***
 

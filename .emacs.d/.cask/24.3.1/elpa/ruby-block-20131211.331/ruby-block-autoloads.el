@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("ruby-block-pkg.el" "ruby-block.el") (21521
-;;;;;;  48262 860315 0))
+;;;### (autoloads nil nil ("ruby-block-pkg.el" "ruby-block.el") (21522
+;;;;;;  50983 998759 540000))
 
 ;;;***
 

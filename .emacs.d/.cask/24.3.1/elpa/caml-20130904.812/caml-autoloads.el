@@ -3,8 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (camldebug) "camldebug" "camldebug.el" (21521 48264
-;;;;;;  0 0))
+;;;### (autoloads (camldebug) "camldebug" "camldebug.el" (21522 50989
+;;;;;;  94165 0))
 ;;; Generated autoloads from camldebug.el
 
 (defvar camldebug-command-name "ocamldebug" "\
@@ -23,7 +23,7 @@ the camldebug commands `cd DIR' and `directory'.
 ;;;### (autoloads nil nil ("caml-compat.el" "caml-emacs.el" "caml-font-old.el"
 ;;;;;;  "caml-font.el" "caml-help.el" "caml-hilit.el" "caml-pkg.el"
 ;;;;;;  "caml-types.el" "caml-xemacs.el" "caml.el" "inf-caml.el")
-;;;;;;  (21521 48264 210889 0))
+;;;;;;  (21522 50989 255522 430000))
 
 ;;;***
 

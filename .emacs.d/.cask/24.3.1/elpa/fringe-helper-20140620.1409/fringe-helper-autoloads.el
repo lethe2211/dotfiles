@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads nil nil ("fringe-helper-pkg.el" "fringe-helper.el")
-;;;;;;  (21521 48285 245079 0))
+;;;;;;  (21522 51139 461568 47000))
 
 ;;;***
 

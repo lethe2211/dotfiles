@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (ac-dabbrev-get-candidates) "ac-dabbrev" "ac-dabbrev.el"
-;;;;;;  (21521 48288 0 0))
+;;;;;;  (21522 51156 454165 0))
 ;;; Generated autoloads from ac-dabbrev.el
 
 (autoload 'ac-dabbrev-get-candidates "ac-dabbrev" "\
@@ -17,8 +17,8 @@ Source for dabbrev")
 
 ;;;***
 
-;;;### (autoloads nil nil ("ac-dabbrev-pkg.el") (21521 48288 391285
-;;;;;;  0))
+;;;### (autoloads nil nil ("ac-dabbrev-pkg.el") (21522 51156 575631
+;;;;;;  336000))
 
 ;;;***
 
