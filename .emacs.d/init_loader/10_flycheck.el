@@ -38,5 +38,10 @@
 (eval-after-load "flycheck"
   '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
 
+;; flycheck-tip
+;; (require 'flycheck-tip)
+;; (define-key your-prog-map (kbd "C-c C-n") 'flycheck-tip-cycle)
+;; (define-key your-prog-map (kbd "C-c C-p") 'flycheck-tip-cycle-reverse)
+
 (provide '10_flycheck)
 ;;; 10_flycheck.el ends here
