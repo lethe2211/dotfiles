@@ -57,8 +57,8 @@
 (which-function-mode 1)
 
 ;; スムーズなスクロール
-(require 'smooth-scroll)
-(smooth-scroll-mode t)
+;; (require 'smooth-scroll)
+;; (smooth-scroll-mode t)
 
 ;行番号表示(site-lispにlinum.elが必要)
 (require 'linum)
