@@ -1,1 +1,0 @@
-/home/lethe-lab/.emacs.d/

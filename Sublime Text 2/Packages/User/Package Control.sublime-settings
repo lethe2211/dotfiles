@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"Aizu Online Judge",
+		"Package Control",
+		"Pretty JSON",
+		"Python Pep8 Lint",
+		"SFTP",
+		"Shell Turtlestein",
+		"SublimeClang",
+		"SublimeCodeIntel",
+		"SublimeREPL",
+		"SublimeRope"
+	]
+}
