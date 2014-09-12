@@ -1,8 +1,8 @@
-;;; init.el --- 
+;;; linux_cask.el --- 
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2014  shogen
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
+;; Author: shogen <shogen@shogen-virtual-machine>
 ;; Keywords: 
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -20,19 +20,12 @@
 
 ;;; Commentary:
 
-;; 最初に読み込むファイル
+;; Linux用のcask設定
 
 ;;; Code:
 
-
-;; caskの設定
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-;; init-loaderによるファイルの分割読み込み
-(require 'init-loader)
-(setq init-loader-show-log-after-init 'error-only)
-(init-loader-load "~/.emacs.d/init_loader")
-
-(provide 'init)
-;;; init.el ends here
+(provide 'linux_cask)
+;;; linux_cask.el ends here
