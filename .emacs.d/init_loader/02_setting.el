@@ -60,8 +60,8 @@
 ;; (require 'smooth-scroll)
 ;; (smooth-scroll-mode t)
 
-;行番号表示(site-lispにlinum.elが必要)
-(require 'linum)
+;行番号表示
+(require 'hlinum)
 (global-linum-mode)
 
 ;; ELPAの設定
