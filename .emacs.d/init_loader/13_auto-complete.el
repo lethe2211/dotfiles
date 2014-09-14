@@ -29,6 +29,7 @@
 (define-key ac-completing-map (kbd "C-n") 'ac-next)      ; C-nで次候補選択
 (define-key ac-completing-map (kbd "C-p") 'ac-previous)  ; C-pで前候補選択
 (setq ac-dwim t)  ; 空気読んでほしい
+
 ;; 情報源として
 ;; * ac-source-filename
 ;; * ac-source-words-in-same-mode-buffers
@@ -40,5 +41,8 @@
 (setq ac-auto-start 3)
 
 (require 'auto-complete-config)    
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/.cask/24.3.1/elpa/auto-complete-20140824.1658/dict")
+(ac-config-default)
+
 (provide '13_auto-complete)
 ;;; 13_auto-complete.el ends here
