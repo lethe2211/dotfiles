@@ -62,7 +62,20 @@
 
 ;行番号表示
 (require 'hlinum)
-(global-linum-mode)
+(hlinum-activate)
+;; 前景色を黒，背景色を赤にする．
+(custom-set-faces
+ '(linum-highlight-face ((t (:foreground "black"
+                             :background "yellow")))))
+(custom-set-variables 
+ '(global-linum-mode t))
+
+;; helmの設定
+(global-set-key (kbd "C-c h") 'helm-mini)
+(helm-mode 1)
+(custom-set-variables '(helm-ff-auto-update-initial-value nil))
+(define-key helm-read-file-map (kbd "C-h") 'delete-backward-char)
+(define-key helm-read-file-map (kbd "<tab>") 'helm-execute-persistent-action)
 
 ;; ELPAの設定
 ;; M-x package-installで好きなパッケージをインストールできる

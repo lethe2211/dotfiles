@@ -30,5 +30,25 @@
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
+;; ruby-block
+(require 'ruby-block)
+(setq ruby-block-highlight-toggle t)
+(defun ruby-mode-hook-ruby-block()
+  (ruby-block-mode t))
+(add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)
+
+;; ruby-end
+(require 'ruby-end)
+
+;; 
+; robe
+;; (add-hook 'ruby-mode-hook
+;; 	  '(lambda ()
+;; 	     (robe-mode)
+;; 	     (robe-ac-setup)
+;; 	     (inf-ruby-keys)))
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)
+
 (provide '22_ruby-mode)
 ;;; 22_ruby-mode.el ends here

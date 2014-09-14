@@ -28,15 +28,20 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; Python
-(add-hook 'python-mode-hook 'flycheck-mode)
+;; (add-hook 'python-mode-hook 'flycheck-mode)
 
 ;; Ruby
-(add-hook 'ruby-mode-hook 'flycheck-mode)
+;; (add-hook 'ruby-mode-hook 'flycheck-mode)
 
 ;; flycheck-color-mode-line
 (require 'flycheck-color-mode-line)
 (eval-after-load "flycheck"
   '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
+
+;; flycheck-pos-tip
+(eval-after-load 'flycheck
+  '(custom-set-variables
+   '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
 
 ;; flycheck-tip
 ;; (require 'flycheck-tip)
