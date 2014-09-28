@@ -72,7 +72,7 @@
 
 ;; helmの設定
 (global-set-key (kbd "C-c h") 'helm-mini)
-(helm-mode 1)
+;;(helm-mode 1)
 ;;(custom-set-variables '(helm-ff-auto-update-initial-value nil))
 (define-key helm-read-file-map (kbd "C-h") 'delete-backward-char)
 (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
