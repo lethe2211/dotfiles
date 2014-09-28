@@ -1,11 +1,23 @@
+#! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
 import sys
 
-def func():
-    return None
+class Hoge(object):
+    
+    def __init__():
+        pass
+
+    def func():
+        '''
+        insert your code
+        '''
+
+        
+        return None
 
 if __name__ == '__main__':
-    func()
+    h = Hoge()
+    h.func()
     

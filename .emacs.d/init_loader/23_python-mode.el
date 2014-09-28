@@ -25,8 +25,8 @@
 ;;; Code:
 
 ;; auto-complete by jedi.el
-(add-hook 'python-mode-hook 'jedi:setup)
-(seq jedi:complete-on-dot t)
+;; (add-hook 'python-mode-hook 'jedi:setup)
+;; (seq jedi:complete-on-dot t)
 
 (provide '23_python-mode)
 ;;; 23_python-mode.el ends here

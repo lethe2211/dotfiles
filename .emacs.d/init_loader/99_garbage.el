@@ -30,8 +30,9 @@
 (load "autoinsert" t)
 (setq auto-insert-alist
       (cons '("\\.cpp" . "template.cpp")
-      (cons '("\\.py"  . "template.py")
-	      auto-insert-alist)))
+	    (cons '("\\.py"  . "template.py")
+		  (cons '("\\.rb" . "template.rb")
+			auto-insert-alist)))
 (add-hook 'find-file-hooks 'auto-insert)
 
 ;3つ以上のウィンドウを開いている時，C-x oでポップアップ表示しながらウィンドウを移動できるようにする(site-lispにpopup.elとpopup-select-window.elが必要)
