@@ -1,8 +1,8 @@
-;;; 23_python-mode.el --- 
+;;; 24_csharp-mode.el --- 
 
 ;; Copyright (C) 2014  admin
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
+;; Author: admin <admin@pc-a321.local>
 ;; Keywords: 
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -20,13 +20,11 @@
 
 ;;; Commentary:
 
-;; python-modeの設定
+;; C#モードの設定
 
 ;;; Code:
 
-;; auto-complete by jedi.el
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+(require 'csharp-mode)
 
-(provide '23_python-mode)
-;;; 23_python-mode.el ends here
+(provide '24_csharp-mode)
+;;; 24_csharp-mode.el ends here
