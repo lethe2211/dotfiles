@@ -2,9 +2,18 @@
 	name = lethe
 	email = lethe2211@gmail.com
 [core]
-	editor = emacs
+	editor = emacs -nw
 	excludesfile = /home/shogen/.gitignore_global
 [alias]
 	logg = log --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
 [push]
 	default = simple
+[alias]
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	cm = commit -m
+	d = diff
+	dc = diff --cached
+	mg = merge
+	
