@@ -9,6 +9,7 @@
 [push]
 	default = simple
 [alias]
+	br = branch
 	co = checkout
 	cob = checkout -b
 	ci = commit
