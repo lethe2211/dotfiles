@@ -6,10 +6,10 @@ import sys
 
 class Hoge(object):
     
-    def __init__():
+    def __init__(self):
         pass
 
-    def func():
+    def func(self):
         '''
         insert your code
         '''
