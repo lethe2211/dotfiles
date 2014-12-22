@@ -36,6 +36,7 @@ setopt auto_cd
 # auto directory pushd that you can get dirs list by cd -[tab]
 #
 setopt auto_pushd
+setopt pushd_ignore_dups
 
 # command correct edition before each completion attempt
 #
@@ -60,6 +61,13 @@ setopt nolistbeep
 #
 bindkey -e
 
+# if you press Ctrl-w, delete the last segment delimited with '/'
+#
+autoload -Uz select-word-style
+select-word-style default
+zstyle ':zle:*' word-chars " /=;@:{},|"
+zstyle ':zle:*' word-style unspecified
+
 # historical backward/forward search with linehead string binded to ^P/^N
 #
 autoload history-search-end
@@ -69,6 +77,8 @@ bindkey "^p" history-beginning-search-backward-end
 bindkey "^n" history-beginning-search-forward-end
 bindkey "\\ep" history-beginning-search-backward-end
 bindkey "\\en" history-beginning-search-forward-end
+zle -la history-incremental-pattern-search-backward && bindkey "^r" history-incremental-pattern-search-backward
+zle -la history-incremental-pattern-search-forward  && bindkey "^S" history-incremental-pattern-search-forward
 
 ## Command history configuration
 #
@@ -80,7 +90,7 @@ setopt share_history # share command history data
 
 ## Completion configuration
 #
-autoload -U compinit
+autoload -Uz compinit
 compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-za-z}'
 
@@ -110,6 +120,15 @@ alias du="du -h"
 alias df="df -h"
 
 alias su="su -l"
+
+alias -g L="| less"
+alias -g M="| more"
+alias -g H="| head"
+alias -g T="| tail"
+alias -g G="| grep"
+alias -g N="> /dev/null"
+alias -g V="| vim -R -"
+alias -g P=" --help | less"
 
 alias gst="git status && git stash list"
 alias gch="git cherry -v"
