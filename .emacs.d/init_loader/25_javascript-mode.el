@@ -1,8 +1,8 @@
-;;; 23_python-mode.el --- 
+;;; 25_javascript-mode.el --- 
 
 ;; Copyright (C) 2014  admin
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
+;; Author: admin <admin@pc-a321.local>
 ;; Keywords: 
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -20,15 +20,19 @@
 
 ;;; Commentary:
 
-;; python-modeの設定
+;; JavaScriptモードの設定
 
 ;;; Code:
 
-;; auto-complete by jedi.el
-;(setq jedi:server-command (list "python" "/home/shogen/.emacs.d/.cask/24.3.1/elpa/jedi-20140321.1323/jediepcserver.py"))
-(setq jedi:server-command '("~/.emacs.d/.cask/24.3.1/elpa/jedi-20140321.1323/jediepcserver.py"))
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (append exec-path '("/usr/local/bin")))
+(setq flymake-log-level 3)
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
-(provide '23_python-mode)
-;;; 23_python-mode.el ends here
+(add-hook 'js2-mode-hook '(lambda ()
+          (require 'flymake-jshint)
+          (flymake-jshint-load)))
+
+(provide '25_javascript-mode)
+;;; 25_javascript-mode.el ends here
