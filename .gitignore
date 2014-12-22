@@ -1,3 +1,5 @@
 #*#
 *~
 .emacs.d/ac-comphist.dat
+.emacs.d/.cask/*
+.emacs.d/.python-environments/*
