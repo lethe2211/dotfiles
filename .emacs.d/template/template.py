@@ -3,13 +3,16 @@
 
 import os
 import sys
+import itertools
+import math
+from collections import Counter, defaultdict
 
-class Hoge(object):
+class Main(object):
     
     def __init__(self):
         pass
 
-    def func(self):
+    def solve(self):
         '''
         insert your code
         '''
@@ -18,6 +21,5 @@ class Hoge(object):
         return None
 
 if __name__ == '__main__':
-    h = Hoge()
-    h.func()
-    
+    m = Main()
+    m.solve()
