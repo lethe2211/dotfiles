@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/07/18 00:40:09 /Users/admin/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <15/01/06 14:05:21 /Users/admin/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -50,4 +50,16 @@
   ("stat" "\\stat")
   ("file-exists" "test -e")
   ("id" "/usr/bin/id")
-  ("gid-integer" 1000)))
+  ("gid-integer" 1000))
+ (["scp" "shogen" "vm" nil nil]
+  ("uname" "Linux 3.13.0-37-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("~" "/home/shogen")
+  ("file-exists" "test -e")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")))
