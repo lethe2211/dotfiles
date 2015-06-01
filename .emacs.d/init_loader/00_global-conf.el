@@ -24,6 +24,7 @@
 
 ;;; Code:
 
+(setq gc-cons-threshold (* 128 1024 1024))
 
 (provide '00_global-conf)
 ;;; 00_global-conf.el ends here

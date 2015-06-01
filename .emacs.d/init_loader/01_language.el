@@ -1,4 +1,4 @@
-;;; 00_language.el --- 
+;;; 01_language.el --- 
 
 ;; Copyright (C) 2014  admin
 
@@ -33,5 +33,5 @@
 (set-default-coding-systems 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
-(provide '00_language)
-;;; 00_language.el ends here
+(provide '01_language)
+;;; 01_language.el ends here

@@ -26,10 +26,10 @@
 
 ;; 自分用スニペットをmySnippets，拾ってきたスニペットをsnippetsに入れる
 (require 'yasnippet)
-(setq yas-snippet-dirs
-      '("~/.emacs.d/mySnippets" 
-        "~/.emacs.d/snippets"
-        ))
+;; (setq yas-snippet-dirs
+;;       '("~/.emacs.d/mySnippets" 
+;;         "~/.emacs.d/snippets"
+;;         ))
 
 ;; スニペット例を有効化する
 (add-to-list 'yas/root-directory "~/.emacs.d/.cask/24.3.1/elpa/yasnippet-20140909.1250/snippets")

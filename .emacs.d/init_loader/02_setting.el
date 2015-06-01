@@ -1,4 +1,4 @@
-;;; 01_setting.el --- 
+;;; 02_setting.el --- 
 
 ;; Copyright (C) 2014  admin
 
@@ -27,9 +27,9 @@
 ;ロードパスの追加
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
-;フォント
-;(set-face-font 'default "Takaoゴシック 16")
-;(set-default-font "Takaoゴシック")
+;; ;フォント
+;; ;(set-face-font 'default "Takaoゴシック 16")
+;; ;(set-default-font "Takaoゴシック")
 
 ;起動時の画面を表示しない
 (setq inhibit-splash-screen t)
@@ -37,11 +37,11 @@
 ;メニューバーを表示しない
 (menu-bar-mode 0)
 
-;ツールバーを表示しない
-;(tool-bar-mode 0)
+;; ;ツールバーを表示しない
+;; ;(tool-bar-mode 0)
 
-; 選択部分のハイライト
-(transient-mark-mode t) 
+;; ; 選択部分のハイライト
+;; (transient-mark-mode t) 
 
 ;対応カッコのハイライト
 (show-paren-mode t)
@@ -56,13 +56,17 @@
 ;カーソルがどの関数の中にあるかをモードラインに表示する
 (which-function-mode 1)
 
-;; スムーズなスクロール
-;; (require 'smooth-scroll)
-;; (smooth-scroll-mode t)
+;; ;; スムーズなスクロール
+;; ;; (require 'smooth-scroll)
+;; ;; (smooth-scroll-mode t)
+
+;; ;; 外部プログラムを呼び出す際にパスの設定を保持する
+;; (exec-path-from-shell-initialize)
 
 ;行番号表示
 (require 'hlinum)
 (hlinum-activate)
+
 ;; 前景色を黒，背景色を赤にする．
 (custom-set-faces
  '(linum-highlight-face ((t (:foreground "black"
@@ -87,5 +91,5 @@
 	       '("ELPA" . "http://tromey.com/elpa/"))
   (package-initialize))
 
-(provide '01_setting)
-;;; 01_setting.el ends here
+(provide '02_setting)
+;;; 02_setting.el ends here

@@ -25,10 +25,10 @@
 ;;; Code:
 
 ;; auto-complete by jedi.el
-;(setq jedi:server-command (list "python" "/home/shogen/.emacs.d/.cask/24.3.1/elpa/jedi-20140321.1323/jediepcserver.py"))
-;(setq jedi:server-command '("~/.emacs.d/.cask/24.3.1/elpa/jedi-20140321.1323/jediepcserver.py"))
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+
+(when darwin-p
+  (add-hook 'python-mode-hook 'jedi:setup)
+  (setq jedi:complete-on-dot t))
 
 (provide '23_python-mode)
 ;;; 23_python-mode.el ends here

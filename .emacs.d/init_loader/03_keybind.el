@@ -1,4 +1,4 @@
-;;; 02_keybind.el --- 
+;;; 03_keybind.el --- 
 
 ;; Copyright (C) 2014  admin
 
@@ -24,42 +24,27 @@
 
 ;;; Code:
 
+(require 'bind-key)
+
 ;C-hでカーソル前の1文字を消す(BackSpace)
-(global-set-key "\C-h" 'delete-backward-char)
+(bind-key* "\C-h" 'delete-backward-char)
 
 ;M-gで入力した行にジャンプする
-(global-set-key (kbd "M-g") 'goto-line)
+(bind-key* "M-g" 'goto-line)
 
 ;Ctrl+Meta+vで1ページ上にスクロールする(デフォルトのM-vだと端末とキーバインドが競合する)
-(global-set-key (kbd "C-M-v") 'scroll-down)
+(bind-key* "C-M-v" 'scroll-down)
 
 ;Meta+nで2行下，Meta+pで2行上に移動
-(global-set-key "\M-n" '(lambda ()
+(bind-key* "\M-n" '(lambda ()
 			   (interactive)
 			   (next-line 2)))
-(global-set-key "\M-p" '(lambda ()
-			  (interactive)
-			  (previous-line 2)))
+(bind-key* "\M-p" '(lambda ()
+                           (interactive)
+			   (previous-line 2)))
 
 ;; C-tでウィンドウの切り替え
-(global-set-key "\C-t" 'other-window)
+(bind-key* "\C-t" 'other-window)
 
-;; (xterm-mouse-mode t)
-;; (global-set-key [mouse-4] '(lambda () (interactive) (scroll-down 1)))
-;; (global-set-key [mouse-5] '(lambda () (interactive) (scroll-up   1)))
-
-(unless window-system
-  (require 'mouse)
-  (xterm-mouse-mode t)
-  (global-set-key [mouse-4] '(lambda ()
-                              (interactive)
-                              (scroll-down 1)))
-  (global-set-key [mouse-5] '(lambda ()
-                              (interactive)
-                              (scroll-up 1)))
-  (defun track-mouse (e))
-  (setq mouse-sel-mode t)
-)
-
-(provide '02_keybind)
-;;; 02_keybind.el ends here
+(provide '03_keybind)
+;;; 03_keybind.el ends here

@@ -60,11 +60,13 @@
 
 (when linux-p
   (require 'cask "~/.cask/cask.el")
+  (require 'eieio)
   (cask-initialize))
 
 ;; init-loaderによるファイルの分割読み込み
 (require 'init-loader)
 (setq init-loader-show-log-after-init 'error-only)
+(setq init-loader-byte-compile t)
 (init-loader-load "~/.emacs.d/init_loader")
 
 (provide 'init)
