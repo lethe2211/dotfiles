@@ -15,6 +15,11 @@
 (depends-on "flycheck-pos-tip")
 (depends-on "flycheck-tip")
 (depends-on "fuzzy")
+(depends-on "git-gutter-fringe+")
+(depends-on "git-modes" :git "https://github.com/magit/git-modes.git")
+(depends-on "go-mode")
+(depends-on "go-autocomplete")
+(depends-on "go-eldoc")
 (depends-on "helm")
 (depends-on "helm-git-grep")
 (depends-on "helm-gtags")
@@ -34,6 +39,7 @@
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
+(depends-on "quickrun")
 (depends-on "robe")
 (depends-on "s")
 (depends-on "smartparens")
@@ -64,3 +70,5 @@
         :git "https://github.com/suzuki/php-completion.git"
         :branch "develop"
         :files ("*.el" "phpcmp-index-of-*"))
+
+

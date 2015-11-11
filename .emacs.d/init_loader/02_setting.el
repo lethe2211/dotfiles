@@ -91,5 +91,10 @@
 	       '("ELPA" . "http://tromey.com/elpa/"))
   (package-initialize))
 
+;; exec-path-from-shell
+(exec-path-from-shell-initialize)
+(let ((envs '("PATH" "VIRTUAL_ENV" "GOROOT" "GOPATH")))
+  (exec-path-from-shell-copy-envs envs))
+
 (provide '02_setting)
 ;;; 02_setting.el ends here

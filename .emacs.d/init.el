@@ -55,7 +55,7 @@
 
 ;; caskの設定
 (when darwin-p
-  (require 'cask )
+  (require 'cask)
   (cask-initialize))
 
 (when linux-p

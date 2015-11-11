@@ -26,9 +26,10 @@
 
 ;; auto-complete by jedi.el
 
-(when darwin-p
-  (add-hook 'python-mode-hook 'jedi:setup)
-  (setq jedi:complete-on-dot t))
+
+;; (when darwin-p
+;;   (add-hook 'python-mode-hook 'jedi:setup)
+;;   (setq jedi:complete-on-dot t))
 
 (provide '23_python-mode)
 ;;; 23_python-mode.el ends here
