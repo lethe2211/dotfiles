@@ -17,9 +17,6 @@
 (depends-on "fuzzy")
 (depends-on "git-gutter-fringe+")
 (depends-on "git-modes" :git "https://github.com/magit/git-modes.git")
-(depends-on "go-mode")
-(depends-on "go-autocomplete")
-(depends-on "go-eldoc")
 (depends-on "helm")
 (depends-on "helm-git-grep")
 (depends-on "helm-gtags")
@@ -30,13 +27,12 @@
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
 (depends-on "init-loader")
-(depends-on "jedi")
 (depends-on "magit")
 (depends-on "multiple-cursors")
 (depends-on "pallet")
-(depends-on "php-mode")
 (depends-on "popup")
 (depends-on "popwin")
+(depends-on "powerline")
 (depends-on "prodigy")
 (depends-on "projectile")
 (depends-on "quickrun")
@@ -51,14 +47,19 @@
 
 ;; progmodes
 (depends-on "coffee-mode")
+(depends-on "go-mode")
 (depends-on "haskell-mode")
 (depends-on "js2-mode")
 (depends-on "json-mode")
 (depends-on "markdown-mode")
+(depends-on "php-mode")
 (depends-on "scala-mode")
 (depends-on "tuareg")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
+
+;;; Python
+(depends-on "jedi")
 
 ;;; Ruby
 (depends-on "ruby-mode")
@@ -71,4 +72,7 @@
         :branch "develop"
         :files ("*.el" "phpcmp-index-of-*"))
 
+;;; Go
+(depends-on "go-autocomplete")
+(depends-on "go-eldoc")
 

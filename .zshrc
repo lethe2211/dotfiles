@@ -143,6 +143,16 @@ alias -g N="> /dev/null"
 alias -g V="| vim -R -"
 alias -g P=" --help | less"
 
+## emacs
+#
+alias emacs='emacsclient -nw -a ""'
+alias e='emacsclient -nw -a ""'
+alias emacsd='\emacs --daemon'
+alias emacskill='emacsclient -e "(kill-emacs)"'
+alias emacsrestart='emacskill && emacsd'
+
+## Git command
+#
 alias gst="git status && git stash list"
 alias gch="git cherry -v"
 alias glgg="git logg"

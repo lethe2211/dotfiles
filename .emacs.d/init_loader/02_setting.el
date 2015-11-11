@@ -27,21 +27,11 @@
 ;ロードパスの追加
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
-;; ;フォント
-;; ;(set-face-font 'default "Takaoゴシック 16")
-;; ;(set-default-font "Takaoゴシック")
-
 ;起動時の画面を表示しない
 (setq inhibit-splash-screen t)
 
 ;メニューバーを表示しない
 (menu-bar-mode 0)
-
-;; ;ツールバーを表示しない
-;; ;(tool-bar-mode 0)
-
-;; ; 選択部分のハイライト
-;; (transient-mark-mode t) 
 
 ;対応カッコのハイライト
 (show-paren-mode t)
@@ -56,13 +46,6 @@
 ;カーソルがどの関数の中にあるかをモードラインに表示する
 (which-function-mode 1)
 
-;; ;; スムーズなスクロール
-;; ;; (require 'smooth-scroll)
-;; ;; (smooth-scroll-mode t)
-
-;; ;; 外部プログラムを呼び出す際にパスの設定を保持する
-;; (exec-path-from-shell-initialize)
-
 ;行番号表示
 (require 'hlinum)
 (hlinum-activate)
@@ -73,6 +56,10 @@
                              :background "yellow")))))
 (custom-set-variables 
  '(global-linum-mode t))
+
+;; Settings for power-line
+(require 'powerline)
+(powerline-vim-theme)
 
 ;; helmの設定
 (global-set-key (kbd "C-c h") 'helm-mini)
@@ -92,9 +79,15 @@
   (package-initialize))
 
 ;; exec-path-from-shell
-(exec-path-from-shell-initialize)
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 (let ((envs '("PATH" "VIRTUAL_ENV" "GOROOT" "GOPATH")))
   (exec-path-from-shell-copy-envs envs))
+
+;; emacsclient
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 (provide '02_setting)
 ;;; 02_setting.el ends here
