@@ -16,7 +16,6 @@
 (depends-on "flycheck-tip")
 (depends-on "fuzzy")
 (depends-on "git-gutter-fringe+")
-(depends-on "git-modes" :git "https://github.com/magit/git-modes.git")
 (depends-on "helm")
 (depends-on "helm-git-grep")
 (depends-on "helm-gtags")
@@ -65,12 +64,6 @@
 (depends-on "ruby-mode")
 (depends-on "ruby-block")
 (depends-on "ruby-end")
-
-;;; PHP
-(depends-on "php-completion"
-        :git "https://github.com/suzuki/php-completion.git"
-        :branch "develop"
-        :files ("*.el" "phpcmp-index-of-*"))
 
 ;;; Go
 (depends-on "go-autocomplete")

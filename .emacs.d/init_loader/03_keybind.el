@@ -46,5 +46,7 @@
 ;; C-tでウィンドウの切り替え
 (bind-key* "\C-t" 'other-window)
 
+(bind-key* "\C-x \C-f" 'helm-find-files)
+
 (provide '03_keybind)
 ;;; 03_keybind.el ends here

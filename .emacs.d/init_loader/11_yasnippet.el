@@ -32,7 +32,7 @@
 ;;         ))
 
 ;; スニペット例を有効化する
-(add-to-list 'yas/root-directory "~/.emacs.d/.cask/24.3.1/elpa/yasnippet-20140909.1250/snippets")
+(add-to-list 'yas/root-directory "~/.emacs.d/.cask/24.5.1/elpa/yasnippet-20160801.1142/snippets")
 ;; yasnippet起動
 (yas-global-mode 1)
 
