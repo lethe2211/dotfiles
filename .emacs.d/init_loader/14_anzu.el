@@ -1,9 +1,9 @@
-;;; 14_anzu.el --- 
+;;; 14_anzu.el --- anzu (better search feature) configuration
 
-;; Copyright (C) 2014  shogen
+;; Copyright (C) 2017
 
-;; Author: shogen <shogen@shogen-virtual-machine>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, search, replace, anzu
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,20 +20,22 @@
 
 ;;; Commentary:
 
-;; anzuの設定
+;;
 
 ;;; Code:
+
+(require 'anzu)
 
 (global-anzu-mode 1)
 
 (custom-set-variables
- '(anzu-mode-lighter "")
- '(anzu-deactivate-region t)
- '(anzu-search-threshold 1000))
+ '(anzu-mode-lighter "")		; Display minor mode name for anzu
+ '(anzu-deactivate-region t)		; Disable region highlight just after a region replace
+ '(anzu-search-threshold 1000))		; Maximum number of matches
 
-;; anzuのキーバインドを既存の検索用キーバインドと置き換える
-(global-set-key (kbd "M-%") 'anzu-query-replace)
-(global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
+;; Replace the existing key binds for search/replace with the anzu key binds
+(bind-key "M-%" 'anzu-query-replace)
+(bind-key "C-M-%" 'anzu-query-replace-regexp)
 
 (provide '14_anzu)
 ;;; 14_anzu.el ends here

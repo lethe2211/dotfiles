@@ -1,9 +1,9 @@
-;;; 25_javascript-mode.el --- 
+;;; 25_javascript-mode.el --- javascript-mode
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@pc-a321.local>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, major mode, js2--mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,19 +20,22 @@
 
 ;;; Commentary:
 
-;; JavaScriptモードの設定
+;;
 
 ;;; Code:
 
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
-(setq exec-path (append exec-path '("/usr/local/bin")))
-(setq flymake-log-level 3)
-(autoload 'js2-mode "js2-mode" nil t)
+;; js2-mode
+(require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
-(add-hook 'js2-mode-hook '(lambda ()
-          (require 'flymake-jshint)
-          (flymake-jshint-load)))
+;; tern-mode (auto-completion)
+(add-hook 'js2-mode-hook
+    (lambda ()
+        (tern-mode t)))
+(eval-after-load 'tern
+    '(progn
+        (require 'tern-auto-complete)
+        (tern-ac-setup)))
 
 (provide '25_javascript-mode)
 ;;; 25_javascript-mode.el ends here

@@ -1,9 +1,9 @@
-;;; 03_keybind.el --- 
+;;; 03_keybind.el --- Keybind configuration
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, keybind
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,32 +20,26 @@
 
 ;;; Commentary:
 
-;; キーバインドの設定
+;;
 
 ;;; Code:
 
+;; bind-key
 (require 'bind-key)
 
-;C-hでカーソル前の1文字を消す(BackSpace)
+;; Delete a character before the cursor by C-h (similar to BackSpace)
 (bind-key* "\C-h" 'delete-backward-char)
 
-;M-gで入力した行にジャンプする
+;; Jump to the designate line num by M-g
 (bind-key* "M-g" 'goto-line)
 
-;Ctrl+Meta+vで1ページ上にスクロールする(デフォルトのM-vだと端末とキーバインドが競合する)
-(bind-key* "C-M-v" 'scroll-down)
-
-;Meta+nで2行下，Meta+pで2行上に移動
-(bind-key* "\M-n" '(lambda ()
-			   (interactive)
-			   (next-line 2)))
-(bind-key* "\M-p" '(lambda ()
-                           (interactive)
-			   (previous-line 2)))
-
-;; C-tでウィンドウの切り替え
+;; Switch windows by C-t
 (bind-key* "\C-t" 'other-window)
 
+;; helm-mini
+(bind-key* "\C-c h" 'helm-mini)
+
+;; helm-find-files (replacing default find-files)
 (bind-key* "\C-x \C-f" 'helm-find-files)
 
 (provide '03_keybind)

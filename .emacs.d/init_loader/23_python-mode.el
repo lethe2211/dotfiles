@@ -1,9 +1,9 @@
-;;; 23_python-mode.el --- 
+;;; 23_python-mode.el --- python-mode
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, major mode, python-mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,16 +20,18 @@
 
 ;;; Commentary:
 
-;; python-modeの設定
+;;
 
 ;;; Code:
 
-;; auto-complete by jedi.el
+;; elpy (whole development environment for python-emacs)
+(require 'elpy)
+(elpy-enable)
 
-
-;; (when darwin-p
-;;   (add-hook 'python-mode-hook 'jedi:setup)
-;;   (setq jedi:complete-on-dot t))
+;; Use flycheck for syntax check (Note: the default of elpy is flymake)
+(when (require 'flycheck nil t)
+  (remove-hook 'elpy-modules 'elpy-module-flymake)
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 (provide '23_python-mode)
 ;;; 23_python-mode.el ends here

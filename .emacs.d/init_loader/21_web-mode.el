@@ -1,9 +1,9 @@
-;;; 21_web-mode.el --- 
+;;; 21_web-mode.el --- web-mode
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, major mode, web-mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,36 +20,43 @@
 
 ;;; Commentary:
 
-;; web-modeの設定
+;;
 
 ;;; Code:
 
 (require 'web-mode)
 
-;; 自動的にWeb-modeを起動したい拡張子を追加する
+;; Associate these extensions for web-mode
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ctp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.gsp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.twig\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.dtl\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tmpl\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.njk\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.gohtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.gotmpl\\'" . web-mode))
 
-;; Web-modeのインデント設定用フック
+;; Hook for web-mode
 (defun web-mode-hook ( )
   "Hooks for Web mode."
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
-  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-code-indent-offset 4)
   (setq tab-width 2)
   (setq-default indent-tabs-mode nil)
 )
 (add-hook 'web-mode-hook 'web-mode-hook)
 
-
+;; Jump to the corresponding parenthesis
+(bind-key "C-n" 'web-mode-tag-match web-mode-map)
 
 (provide '21_web-mode)
 ;;; 21_web-mode.el ends here

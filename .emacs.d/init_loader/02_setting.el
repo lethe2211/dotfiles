@@ -1,9 +1,9 @@
-;;; 02_setting.el --- 
+;;; 02_setting.el --- Emacs whole setting
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,53 +20,50 @@
 
 ;;; Commentary:
 
-;; Emacs全体の設定
+;;
 
 ;;; Code:
 
-;ロードパスの追加
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
+;; Add load-path to add any elisp files
+(add-to-list 'load-path "~/dotfiles/.emacs.d/site-lisp")
 
-;起動時の画面を表示しない
+;; Not display splash screen
 (setq inhibit-splash-screen t)
 
-;メニューバーを表示しない
+;; Not display menu bar
 (menu-bar-mode 0)
 
-;対応カッコのハイライト
+;; Highlight the corresponding parenthesis
 (show-paren-mode t)
 
-;; yes or noでなく，y or nで答えられるようにする
+;; Modify the answer: yes/no -> y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;バックアップファイルは作らない
+;; Not create backup files
 (setq make-backup-files nil)
+
+;; Not create auto-save files
 (setq auto-save-default nil)
 
-;カーソルがどの関数の中にあるかをモードラインに表示する
+
+;; Display in which function we are in the mode line
 (which-function-mode 1)
 
-;行番号表示
+;; Display line numbers (hlinum-mode)
 (require 'hlinum)
 (hlinum-activate)
+(setq linum-format "%5d ") 		; Keep 5 characters from the line head for linum
+(global-linum-mode 1)
 
-;; 前景色を黒，背景色を赤にする．
+;; Make foreground color black and background color yellow
 (custom-set-faces
  '(linum-highlight-face ((t (:foreground "black"
-                             :background "yellow")))))
-(custom-set-variables 
- '(global-linum-mode t))
+					 :background "yellow")))))
 
-;; Settings for power-line
-(require 'powerline)
-(powerline-vim-theme)
-
-;; helmの設定
-(global-set-key (kbd "C-c h") 'helm-mini)
+;; helm
 (helm-mode 1)
 
-;; ELPAの設定
-;; M-x package-installで好きなパッケージをインストールできる
+;; melpa/ELPA
 (when (require 'package nil t)
   (add-to-list 'package-archives
 	       '("melpa" . "http://melpa.milkbox.net/packages/"))

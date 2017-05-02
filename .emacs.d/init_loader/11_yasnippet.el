@@ -1,9 +1,9 @@
-;;; 11.yasnippet.el --- 
+;;; 11_yasnippet.el --- yasnippet (code snippet tool) configuration
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, snippet, yasnippet
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,30 +20,26 @@
 
 ;;; Commentary:
 
-;; yasnippet(スニペット管理フレームワーク)の設定
+;;
 
 ;;; Code:
 
-;; 自分用スニペットをmySnippets，拾ってきたスニペットをsnippetsに入れる
 (require 'yasnippet)
-;; (setq yas-snippet-dirs
-;;       '("~/.emacs.d/mySnippets" 
-;;         "~/.emacs.d/snippets"
-;;         ))
 
-;; スニペット例を有効化する
-(add-to-list 'yas/root-directory "~/.emacs.d/.cask/24.5.1/elpa/yasnippet-20160801.1142/snippets")
-;; yasnippet起動
+;; Enable sample snippets
+(add-to-list 'yas-snippet-dirs "~/dotfiles/.emacs.d/yasnippet-snippets")
+
+;; yasnippet
 (yas-global-mode 1)
 
-; 既存スニペットを挿入する
-(define-key yas-minor-mode-map (kbd "C-x i i") 'yas-insert-snippet)
+;; Insert an existing snippet
+(bind-key "C-x i i" 'yas-insert-snippet yas-minor-mode-map)
 
-;; 新規スニペットを作成するバッファを用意する
-(define-key yas-minor-mode-map (kbd "C-x i n") 'yas-new-snippet)
+;; Prepare a buffer to create a new snippet
+(bind-key "C-x i n" 'yas-insert-snippet yas-minor-mode-map)
 
-;; 既存スニペットを閲覧・編集する
-(define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file)
+;; See/Edit an existing snippet
+(bind-key  "C-x i v" 'yas-insert-snippet yas-minor-mode-map)
 
-(provide '11.yasnippet)
-;;; 11.yasnippet.el ends here
+(provide '11_yasnippet)
+;;; 11_yasnippet.el ends here

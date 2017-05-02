@@ -1,9 +1,9 @@
-;;; 22_ruby-mode.el --- 
+;;; 22_ruby-mode.el --- ruby-mode
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, major mode, ruby-mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,34 +20,35 @@
 
 ;;; Commentary:
 
-;; ruby-modeの設定
+;;
 
 ;;; Code:
 
 (autoload 'ruby-mode "ruby-mode"
   "Mode for editing ruby source files" t)
-(add-to-list 'auto-mode-alist '("\\.rb$latex " . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("[Rr]akefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '(".pryrc" . ruby-mode))
 
-;; ruby-block
+;; ruby-block (Highlight the line which corresponds to "end")
 (require 'ruby-block)
 (setq ruby-block-highlight-toggle t)
 (defun ruby-mode-hook-ruby-block()
   (ruby-block-mode t))
 (add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)
 
-;; ruby-end
+;; ruby-end (Automatically insert "end")
 (require 'ruby-end)
+(add-hook 'ruby-mode-hook
+  '(lambda ()
+    (abbrev-mode 1)
+    (electric-pair-mode t)
+    (electric-indent-mode t)
+    (electric-layout-mode t)))
 
-;; 
-; robe
-;; (add-hook 'ruby-mode-hook
-;; 	  '(lambda ()
-;; 	     (robe-mode)
-;; 	     (robe-ac-setup)
-;; 	     (inf-ruby-keys)))
+;; robe (omni completion for ruby)
 (add-hook 'ruby-mode-hook 'robe-mode)
 (autoload 'robe-mode "robe" "Code navigation, documentation lookup and completion for Ruby" t nil)
 (autoload 'ac-robe-setup "ac-robe" "auto-complete robe" nil nil)

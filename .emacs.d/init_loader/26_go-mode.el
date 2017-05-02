@@ -1,9 +1,9 @@
-;;; 26_go_mode.el --- 
+;;; 26_go_mode.el --- go-mode
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, major mode, go-mode
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,19 +20,13 @@
 
 ;;; Commentary:
 
-;; Go-mode
+;;
 
 ;;; Code:
 
-;; Add environmental variables
-;; (setenv "GOPATH" "~/go")
-;; (setenv "PATH" (concat (getenv "PATH") ":" "/extra/path/element"))
-;; (add-to-list 'exec-path (expand-file-name "~/go/bin"))
-
-;; go-mode
 (require 'go-mode)
 
-;; go-fmt
+;; go-fmt (auto-formatting before save action)
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; go-eldoc

@@ -1,9 +1,9 @@
-;;; 00_global-conf.el --- 
+;;; 00_global-conf.el --- Global configuration
 
 ;; Copyright (C) 2014  admin
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 全体的な設定
+;; 
 
 ;;; Code:
 

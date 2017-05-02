@@ -1,28 +1,30 @@
 ;;; 24_php-mode.el --- php-mode
 
-;; Copyright (C) 2015  shogen
+;; Copyright (C) 2017
 
-;; Author: shogen <shogen@shogen-virtual-machine>
-;; Keywords: abbrev, abbrev, abbrev, 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, major mode, php-mode
 
 ;;; Commentary:
 
-;; python-modeの設定
+;;
 
 ;;; Code:
 
+(require 'php-mode)
+
+
 ;; php-mode-hook
 (add-hook 'php-mode-hook
-          (lambda ()
-            (require 'php-completion)
-            (php-completion-mode t)
-            (define-key php-mode-map (kbd "C-o") 'phpcmp-complete)
-            (make-local-variable 'ac-sources)
-            (setq ac-sources '(
-                               ac-source-words-in-same-mode-buffers
-                               ac-source-php-completion
-                               ac-source-filename
-                               ))))
+          '(lambda ()
+             (auto-complete-mode t)
+             (require 'ac-php)
+             (setq ac-sources  '(ac-source-php ))
+             (yas-global-mode 1)
+             (ac-php-core-eldoc-setup) ; enable eldoc
 
+             (bind-key "C-]" 'ac-php-find-symbol-at-point php-mode-map)	; goto define
+             (bind-key "C-t" 'ac-php-location-stack-back php-mode-map) ; go back
+             ))
 (provide '24_php-mode)
 ;;; 24_php-mode.el ends here

@@ -1,9 +1,9 @@
-;;; 10_flycheck.el --- 
+;;; 10_flycheck.el --- flycheck (auto-completion) configuration
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, flycheck, auto-completion
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,33 +20,16 @@
 
 ;;; Commentary:
 
-;; flycheckの設定
+;;
 
 ;;; Code:
 
 ;; global setting
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-;; Python
-;; (add-hook 'python-mode-hook 'flycheck-mode)
-
-;; Ruby
-;; (add-hook 'ruby-mode-hook 'flycheck-mode)
-
-;; flycheck-color-mode-line
-(require 'flycheck-color-mode-line)
-(eval-after-load "flycheck"
-  '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
-
-;; flycheck-pos-tip
+;; flycheck-cask
 (eval-after-load 'flycheck
-  '(custom-set-variables
-   '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
-
-;; flycheck-tip
-;; (require 'flycheck-tip)
-;; (define-key your-prog-map (kbd "C-c C-n") 'flycheck-tip-cycle)
-;; (define-key your-prog-map (kbd "C-c C-p") 'flycheck-tip-cycle-reverse)
+  '(add-hook 'flycheck-mode-hook #'flycheck-cask-setup))
 
 (provide '10_flycheck)
 ;;; 10_flycheck.el ends here

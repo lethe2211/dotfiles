@@ -1,9 +1,9 @@
-;;; init.el --- 
+;;; init.el --- First file to be loaded
 
-;; Copyright (C) 2014  admin
+;; Copyright (C) 2017
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,10 +20,11 @@
 
 ;;; Commentary:
 
-;; 最初に読み込むファイル
+;;
 
 ;;; Code:
 
+;; emacs-version predicates
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -31,15 +32,10 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(defun x->bool (elt) (not (not elt)))
-
-;; emacs-version predicates
-(setq emacs22-p (string-match "^22" emacs-version)
-      emacs23-p (string-match "^23" emacs-version)
-      emacs23.0-p (string-match "^23\.0" emacs-version)
-      emacs23.1-p (string-match "^23\.1" emacs-version)
-      emacs23.2-p (string-match "^23\.2" emacs-version)
-      emacs24 (string-match "^24" emacs-version))
+(setq emacs22 (string-match "^22" emacs-version)
+      emacs23 (string-match "^23" emacs-version)
+      emacs24 (string-match "^24" emacs-version)
+      emacs25 (string-match "^25" emacs-version))
 
 ;; system-type predicates
 (setq darwin-p  (eq system-type 'darwin)
@@ -60,7 +56,7 @@
       meadow-p  (featurep 'meadow)
       windows-p (or cygwin-p nt-p meadow-p))
 
-;; caskの設定
+;; Load Cask
 (when darwin-p
   (require 'cask)
   (cask-initialize))
@@ -70,7 +66,7 @@
   (require 'eieio)
   (cask-initialize))
 
-;; init-loaderによるファイルの分割読み込み
+;; Load a sub directory using init-loader
 (require 'init-loader)
 (setq init-loader-show-log-after-init 'error-only)
 (setq init-loader-byte-compile t)
@@ -79,15 +75,3 @@
 (provide 'init)
 ;;; init.el ends here
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

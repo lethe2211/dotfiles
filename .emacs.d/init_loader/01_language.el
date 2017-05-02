@@ -1,9 +1,9 @@
-;;; 01_language.el --- 
+;;; 01_language.el --- Language configuration
 
 ;; Copyright (C) 2014  admin
 
-;; Author: admin <admin@h77.26.238.10.30790.vlan.kuins.net>
-;; Keywords: 
+;; Author: lethe2211
+;; Keywords: emacs, configuration, language
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,18 +20,18 @@
 
 ;;; Commentary:
 
-;; 言語環境とか文字コードとか
+;;
 
 ;;; Code:
 
-;言語環境
+;; Language
 (set-language-environment "Japanese")
-(setq default-input-method "MW32-IME")
 
-;文字コード
+;; Character set
 (prefer-coding-system 'utf-8)
-(set-default-coding-systems 'utf-8)
+(set-file-name-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
 
 (provide '01_language)
 ;;; 01_language.el ends here
