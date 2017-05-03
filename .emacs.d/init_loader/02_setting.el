@@ -45,7 +45,6 @@
 ;; Not create auto-save files
 (setq auto-save-default nil)
 
-
 ;; Display in which function we are in the mode line
 (which-function-mode 1)
 
@@ -59,9 +58,6 @@
 (custom-set-faces
  '(linum-highlight-face ((t (:foreground "black"
 					 :background "yellow")))))
-
-;; helm
-(helm-mode 1)
 
 ;; melpa/ELPA
 (when (require 'package nil t)

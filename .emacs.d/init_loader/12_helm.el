@@ -1,9 +1,9 @@
-;;; 03_keybind.el --- Global keybind configuration
+;;; 12_helm.el --- helm (Interface to search anything in Emacs)
 
 ;; Copyright (C) 2017
 
 ;; Author: lethe2211
-;; Keywords: emacs, configuration, keybind
+;; Keywords: emacs, configuration, search, helm
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -24,17 +24,14 @@
 
 ;;; Code:
 
-;; bind-key
-(require 'bind-key)
+;; helm
+(helm-mode 1)
 
-;; Delete a character before the cursor by C-h (similar to BackSpace)
-(bind-key* "C-h" 'delete-backward-char)
+;; helm-mini
+(bind-key* "C-c h" 'helm-mini)
 
-;; Jump to the designate line num by M-g
-(bind-key* "M-g" 'goto-line)
+;; helm-find-files (replacing default find-files)
+(bind-key* "C-x C-f" 'helm-find-files)
 
-;; Switch windows by C-t
-(bind-key* "C-t" 'other-window)
-
-(provide '03_keybind)
-;;; 03_keybind.el ends here
+(provide '12_helm)
+;;; 12_helm.el ends here
