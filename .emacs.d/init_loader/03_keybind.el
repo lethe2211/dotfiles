@@ -28,19 +28,19 @@
 (require 'bind-key)
 
 ;; Delete a character before the cursor by C-h (similar to BackSpace)
-(bind-key* "\C-h" 'delete-backward-char)
+(bind-key* "C-h" 'delete-backward-char)
 
 ;; Jump to the designate line num by M-g
 (bind-key* "M-g" 'goto-line)
 
 ;; Switch windows by C-t
-(bind-key* "\C-t" 'other-window)
+(bind-key* "C-t" 'other-window)
 
 ;; helm-mini
-(bind-key* "\C-c h" 'helm-mini)
+(bind-key* "C-c h" 'helm-mini)
 
 ;; helm-find-files (replacing default find-files)
-(bind-key* "\C-x \C-f" 'helm-find-files)
+(bind-key* "C-x C-f" 'helm-find-files)
 
 (provide '03_keybind)
 ;;; 03_keybind.el ends here
