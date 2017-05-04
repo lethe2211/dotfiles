@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: intinput
+# key: intinput
+# --
+${1:varint} = int(input())
+$0

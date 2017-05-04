@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tsvread
+# key: tsvread
+# --
+with open(${1:filename}, 'r') as rf:
+    reader = csv.reader(rf, delimiter=${2:"\t"})
+    for row in reader:
+        $0

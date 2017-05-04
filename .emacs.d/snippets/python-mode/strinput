@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: strinput
+# key: strinput
+# --
+${1:varstr} = input()
+$0

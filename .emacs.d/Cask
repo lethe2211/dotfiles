@@ -45,6 +45,7 @@
 (depends-on "undo-tree")
 (depends-on "use-package")
 (depends-on "yasnippet")
+(depends-on "yatemplate")
 
 ;; progmodes
 (depends-on "coffee-mode")

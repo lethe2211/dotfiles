@@ -1,21 +1,18 @@
-#! /usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-class Hoge
+class ${1:Main}
   def initialize
-    
+    nil
   end
 
 
-  def func
-    # insert your code
-    
-
+  def ${2:some_method}
+    $0    
     return nil
   end
 end
 
 if __FILE__ == $PROGRAM_NAME
-  h = Hoge.new
-  h.func
+  h = $1.new
+  h.$2
 end

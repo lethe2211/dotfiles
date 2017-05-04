@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dintinput
+# key: dintinput
+# --
+${1:first}, ${2:second} = map(int, input().split())
+$0

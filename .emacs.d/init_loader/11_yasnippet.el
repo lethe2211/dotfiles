@@ -26,9 +26,6 @@
 
 (require 'yasnippet)
 
-;; Enable sample snippets
-(add-to-list 'yas-snippet-dirs "~/dotfiles/.emacs.d/yasnippet-snippets")
-
 ;; yasnippet
 (yas-global-mode 1)
 
@@ -36,10 +33,10 @@
 (bind-key "C-x i i" 'yas-insert-snippet yas-minor-mode-map)
 
 ;; Prepare a buffer to create a new snippet
-(bind-key "C-x i n" 'yas-insert-snippet yas-minor-mode-map)
+(bind-key "C-x i n" 'yas-new-snippet yas-minor-mode-map)
 
 ;; See/Edit an existing snippet
-(bind-key  "C-x i v" 'yas-insert-snippet yas-minor-mode-map)
+(bind-key  "C-x i v" 'yas-visit-snippet-file yas-minor-mode-map)
 
 (provide '11_yasnippet)
 ;;; 11_yasnippet.el ends here
