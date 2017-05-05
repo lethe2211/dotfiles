@@ -25,6 +25,7 @@
 ;;; Code:
 
 ;; yatemplate
+(require 'yatemplate)
 (yatemplate-fill-alist)
 
 ;; yatemplate-mode
