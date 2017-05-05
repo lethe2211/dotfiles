@@ -1,3 +1,0 @@
-[
-    { "keys": ["ctrl+super+8"], "command": "pep8_lint" }
-]
