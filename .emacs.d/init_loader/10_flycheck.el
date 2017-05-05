@@ -31,5 +31,9 @@
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-cask-setup))
 
+;; Jump to the next/previous error
+(bind-key* "C-c C-p" 'flycheck-previous-error 'flycheck-mode-map)
+(bind-key* "C-c C-n" 'flycheck-next-error 'flycheck-mode-map)
+
 (provide '10_flycheck)
 ;;; 10_flycheck.el ends here
