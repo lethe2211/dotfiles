@@ -2,7 +2,7 @@
 	name = lethe
 	email = lethe2211@gmail.com
 [core]
-	editor = emacs -nw
+	editor = emacs -Q
 	excludesfile = /home/shogen/.gitignore_global
 [alias]
 	logg = log --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
