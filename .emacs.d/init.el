@@ -72,6 +72,30 @@
 (setq init-loader-byte-compile t)
 (init-loader-load "~/.emacs.d/init_loader")
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(anzu-deactivate-region t)
+ '(anzu-mode-lighter "")
+ '(anzu-search-threshold 1000))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(linum-highlight-face ((t (:foreground "black" :background "yellow"))))
+ '(magit-diff-added ((t (:foreground "#22aa22"))))
+ '(magit-diff-added-highlight ((t (:background "black" :foreground "#22aa22"))))
+ '(magit-diff-base ((t (:foreground "#aaaa11"))))
+ '(magit-diff-base-highlight ((t (:foreground "#aaaa11"))))
+ '(magit-diff-context-highlight ((t (:background "black" :foreground "grey50"))))
+ '(magit-diff-hunk-heading ((t (:foreground "grey30"))))
+ '(magit-diff-hunk-heading-highlight ((t (:background "black" :foreground "grey30"))))
+ '(magit-diff-removed ((t (:foreground "#aa2222"))))
+ '(magit-diff-removed-highlight ((t (:background "black" :foreground "#aa2222"))))
+ '(magit-section-highlight ((t (:background "black")))))
+
 (provide 'init)
 ;;; init.el ends here
-

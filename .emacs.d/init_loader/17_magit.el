@@ -1,8 +1,8 @@
 ;;; 17_magit.el --- magit (Git client for Emacs)
 
-;; Copyright (C) 2017  Shogen
+;; Copyright (C) 2017
 
-;; Author: Shogen <shuhei.shogen@P40738>
+;; Author: lethe2211
 ;; Keywords: emacs, configuration, template, yatemplate
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -24,6 +24,7 @@
 
 ;;; Code:
 
+;; magit
 (require 'magit)
 
 ;; magit-status
