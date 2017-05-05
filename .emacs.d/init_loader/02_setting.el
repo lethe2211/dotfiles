@@ -25,7 +25,7 @@
 ;;; Code:
 
 ;; Add load-path to add any elisp files
-(add-to-list 'load-path "~/dotfiles/.emacs.d/site-lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
 
 ;; Not display splash screen
 (setq inhibit-splash-screen t)
@@ -49,6 +49,10 @@
 (require 'highlight-symbol)
 (setq highlight-symbol-colors '("black"))
 (add-hook 'prog-mode-hook 'highlight-symbol-mode)
+
+;; undo-tree
+(require 'undo-tree)
+(global-undo-tree-mode t)
 
 ;; Display in which function we are in the mode line
 (which-function-mode 1)
