@@ -25,13 +25,28 @@
 ;;; Code:
 
 ;; helm
+(require 'helm-mode)
+(require 'helm-config)
 (helm-mode 1)
+
+;; helm-themes (helm interface for color themes)
+(require 'helm-themes)
 
 ;; helm-mini
 (bind-key* "C-c h" 'helm-mini)
 
 ;; helm-find-files (replacing default find-files)
 (bind-key* "C-x C-f" 'helm-find-files)
+
+;; helm-M-x (replacing default M-x)
+(bind-key* "M-x" 'helm-M-x)
+
+;; helm-git-grep
+(require 'helm-git-grep)
+(bind-key* "C-c g" 'helm-git-grep)
+(bind-key "C-c g" 'helm-git-grep-from-isearch isearch-mode-map)
+(eval-after-load 'helm
+  '(bind-key "C-c g" 'helm-git-grep-from-helm helm-map))
 
 (provide '12_helm)
 ;;; 12_helm.el ends here

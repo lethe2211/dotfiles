@@ -45,6 +45,11 @@
 ;; Not create auto-save files
 (setq auto-save-default nil)
 
+;; highlight-symbol
+(require 'highlight-symbol)
+(setq highlight-symbol-colors '("black"))
+(add-hook 'prog-mode-hook 'highlight-symbol-mode)
+
 ;; Display in which function we are in the mode line
 (which-function-mode 1)
 
