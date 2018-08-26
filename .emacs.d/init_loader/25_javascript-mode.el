@@ -24,18 +24,15 @@
 
 ;;; Code:
 
-;; js2-mode
+;; js2-mode (for *.js)
 (require 'js2-mode)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$\\'" . js2-mode))
 
-;; tern-mode (auto-completion)
-(add-hook 'js2-mode-hook
-    (lambda ()
-        (tern-mode t)))
-(eval-after-load 'tern
-    '(progn
-        (require 'tern-auto-complete)
-        (tern-ac-setup)))
+;; js2-jsx-mode (for *.jsx)
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-jsx-mode))
+(flycheck-add-mode 'javascript-eslint 'js2-jsx-mode)
+(add-hook 'js2-jsx-mode-hook 'flycheck-mode)
+(add-hook 'js2-jsx-mode-hook 'emmet-mode)
 
 (provide '25_javascript-mode)
 ;;; 25_javascript-mode.el ends here

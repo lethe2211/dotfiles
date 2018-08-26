@@ -55,8 +55,13 @@
 )
 (add-hook 'web-mode-hook 'web-mode-hook)
 
+;; Hook emmet-mode
+(require 'emmet-mode)
+(add-hook 'web-mode-hook 'emmet-mode)
+(bind-key "C-x RET" 'emmet-expand-line emmet-mode-keymap)
+
 ;; Jump to the corresponding parenthesis
-(bind-key "C-n" 'web-mode-tag-match web-mode-map)
+(bind-key "C-c n" 'web-mode-tag-match web-mode-map)
 
 (provide '21_web-mode)
 ;;; 21_web-mode.el ends here
