@@ -33,11 +33,11 @@
 (add-to-list 'auto-mode-alist '(".pryrc" . ruby-mode))
 
 ;; ruby-block (Highlight the line which corresponds to "end")
-(require 'ruby-block)
-(setq ruby-block-highlight-toggle t)
-(defun ruby-mode-hook-ruby-block()
-  (ruby-block-mode t))
-(add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)
+;; (require 'ruby-block)
+;; (setq ruby-block-highlight-toggle t)
+;; (defun ruby-mode-hook-ruby-block()
+;;   (ruby-block-mode t))
+;; (add-hook 'ruby-mode-hook 'ruby-mode-hook-ruby-block)
 
 ;; ruby-end (Automatically insert "end")
 (require 'ruby-end)

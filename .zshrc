@@ -153,10 +153,22 @@ alias emacsrestart='emacskill && emacsd'
 
 ## Git command
 #
+alias gaa="git add ."
+alias gbr="git branch"
+alias gbrm="git branch -m"
+alias gbrd="git branch -D"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gcm="git commit -m"
+alias gca="git commit --amend"
 alias gst="git status && git stash list"
 alias gch="git cherry -v"
 alias glgg="git logg"
 alias glg="git logg | head"
+alias gplo="git pull origin"
+alias gpso="git push origin"
 
 ## terminal configuration
 #
@@ -193,6 +205,12 @@ case "${TERM}" in
 	;;
 esac
 
+
 ## load user .zshrc configuration file
 #
 [ -f ~/.zshrc.mine ] && source ~/.zshrc.mine
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/shuhei.shogen/.sdkman"
+[[ -s "/Users/shuhei.shogen/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/shuhei.shogen/.sdkman/bin/sdkman-init.sh"

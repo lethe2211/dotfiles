@@ -1,11 +1,11 @@
 [user]
-	name = lethe
-	email = lethe2211@gmail.com
+	name = Shogen, Shuhei | Lethe | ELPD
+	email = shuhei.shogen@rakuten.com
 [core]
 	editor = emacs -Q
-	excludesfile = /home/shogen/.gitignore_global
+	excludesfile = /Users/shuhei.shogen/.gitignore_global
 [alias]
-	logg = log --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
+	logg = log --graph --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
 [push]
 	default = simple
 [alias]
@@ -20,3 +20,11 @@
 	
 [color]
 	ui = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[ghq]
+	root = /Users/shuhei.shogen/go/src
