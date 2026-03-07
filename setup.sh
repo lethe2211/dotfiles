@@ -12,5 +12,9 @@ ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 # tmux
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+# Claude Code (Don't overwrite the existing files!)
+mkdir -p ~/.claude
+ln -s ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+
 # Emacs
 ln -s ~/dotfiles/.emacs.d ~/.emacs.d

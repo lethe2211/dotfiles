@@ -1,8 +1,8 @@
 [user]
-	name = Shogen, Shuhei | Lethe | ELPD
-	email = shuhei.shogen@rakuten.com
+	name = lethe2211
+	email = lethe2211@gmail.com
 [core]
-	editor = emacs -Q
+	editor = vim
 	excludesfile = /Users/shuhei.shogen/.gitignore_global
 [alias]
 	logg = log --graph --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
@@ -28,3 +28,8 @@
 	trustExitCode = true
 [ghq]
 	root = /Users/shuhei.shogen/go/src
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
