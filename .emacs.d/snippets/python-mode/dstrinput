@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: dstrinput
-# key: dstrinput
-# --
-${1:first}, ${2:second} = input().split()
-$0
