@@ -3,7 +3,6 @@
 	email = lethe2211@gmail.com
 [core]
 	editor = vim
-	excludesfile = /Users/shuhei.shogen/.gitignore_global
 [alias]
 	logg = log --graph --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s'
 [push]
@@ -20,16 +19,10 @@
 	
 [color]
 	ui = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[ghq]
-	root = /Users/shuhei.shogen/go/src
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[init]
+	defaultBranch = main

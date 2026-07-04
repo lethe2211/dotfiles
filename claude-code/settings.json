@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(npm run dev)",
+      "Bash(npm run build)",
+      "Bash(npm test)",
+      "WebFetch(domain:qiita.com)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Read(.env)"
+    ]
+  },
+  "model": "claude-fable-5[1m]"
+}
