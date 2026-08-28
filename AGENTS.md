@@ -4,3 +4,9 @@
 - コンテキスト節約のため、調査やデバッグにはサブエージェントを活用してください
 - 調査の結果を出力する際は、Markdown形式で、ターミナルからのCopy & Pasteがしやすいような出力フォーマットにしてください
 - 絵文字や強調（"*"）など、結果を確認する際にノイズになる構文は使用しないでください
+
+# Atlassian関連
+- PATは`~/projects/notes/obsidian-rakuten/.pat` に置いています。Confluence / JIRA / BitBucketにアクセスする際に使ってください。
+
+# Obsidian関連
+- Vaultは`~/projects/notes/`以下に置いています。知識ベースとして、探すようにしてください。

@@ -60,5 +60,4 @@ ln -s ~/dotfiles/AGENTS.md ~/.codex/AGENTS.md
 # Claude Code (Don't overwrite the existing files!)
 mkdir -p ~/.claude
 ln -s ~/dotfiles/claude-code/CLAUDE.md ~/.claude/CLAUDE.md
-ln -s ~/dotfiles/AGENTS.md ~/.claude/AGENTS.md # Let CLAUDE.md read AGENTS.md
 ln -s ~/dotfiles/claude-code/settings.json ~/.claude/settings.json

@@ -11,11 +11,10 @@
       "Bash(npm test)",
       "WebFetch(domain:qiita.com)"
     ],
-    "deny": [
+    "ask": [
       "Bash(rm -rf:*)",
       "Bash(sudo:*)",
       "Read(.env)"
     ]
-  },
-  "model": "claude-fable-5[1m]"
+  }
 }
